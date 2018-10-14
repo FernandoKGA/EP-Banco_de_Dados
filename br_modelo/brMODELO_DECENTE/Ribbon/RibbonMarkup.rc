@@ -1,0 +1,951 @@
+// ******************************************************************************
+// * This is an automatically generated file containing the ribbon resource for *
+// * your application.                                                          *
+// ******************************************************************************
+
+#include ".\RibbonMarkup.h"
+
+STRINGTABLE 
+BEGIN
+    cmdTabOpcoes_LabelTitle_RESID L"Op\x00e7\x00f5es" /* LabelTitle cmdTabOpcoes_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdTabConceitual_LabelTitle_RESID L"Esquema Conceitual" /* LabelTitle cmdTabConceitual_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdTabLogico_LabelTitle_RESID L"Esquema L\x00f3gico" /* LabelTitle cmdTabLogico_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdTabConfiguracao_LabelTitle_RESID L"Configura\x00e7\x00f5es" /* LabelTitle cmdTabConfiguracao_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupOpcoes_LabelTitle_RESID L"Op\x00e7\x00f5es" /* LabelTitle cmdGroupOpcoes_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupFerramentasConceitual_LabelTitle_RESID L"Ferramentas" /* LabelTitle cmdGroupFerramentasConceitual_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupFerramentasLogico_LabelTitle_RESID L"Ferramentas" /* LabelTitle cmdGroupFerramentasLogico_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupComandosConceitual_LabelTitle_RESID L"Comandos" /* LabelTitle cmdGroupComandosConceitual_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupComandosLogico_LabelTitle_RESID L"Comandos" /* LabelTitle cmdGroupComandosLogico_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdNovoConceitual_LabelTitle_RESID L"Modelo Conceitual" /* LabelTitle cmdNovoConceitual_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdNovoConceitual_LabelDescription_RESID L"Criar um novo modelo conceitual" /* LabelDescription cmdNovoConceitual_LabelDescription_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdNovoConceitual_TooltipTitle_RESID L"Modelo Conceitual" /* TooltipTitle cmdNovoConceitual_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdNovoConceitual_TooltipDescription_RESID L"Permite a cria\x00e7\x00e3o de um novo modelo conceitual." /* TooltipDescription cmdNovoConceitual_TooltipDescription_RESID: (null) */
+END
+
+cmdNovoConceitual_SmallImages_RESID    BITMAP    "Res\\ModeloConceitual2S.bmp" /* SmallImages cmdNovoConceitual_SmallImages_RESID: (null) */
+cmdNovoConceitual_LargeImages_RESID    BITMAP    "Res\\ModeloConceitual2L.bmp" /* LargeImages cmdNovoConceitual_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarEntidade_LabelTitle_RESID L"Entidade" /* LabelTitle cmdCriarEntidade_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarEntidade_TooltipTitle_RESID L"Criar Entidade" /* TooltipTitle cmdCriarEntidade_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarEntidade_TooltipDescription_RESID L"Permite criar um nova entidade no modelo conceitual atual." /* TooltipDescription cmdCriarEntidade_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarEntidade_SmallImages_RESID    BITMAP    "Res\\EntidadeS.bmp" /* SmallImages cmdCriarEntidade_SmallImages_RESID: (null) */
+cmdCriarEntidade_LargeImages_RESID    BITMAP    "Res\\EntidadeL.bmp" /* LargeImages cmdCriarEntidade_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributo_LabelTitle_RESID L"Atributo" /* LabelTitle cmdCriarAtributo_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributo_TooltipTitle_RESID L"Criar Atributo" /* TooltipTitle cmdCriarAtributo_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributo_TooltipDescription_RESID L"Permite criar um novo atributo no modelo conceitual atual." /* TooltipDescription cmdCriarAtributo_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarAtributo_SmallImages_RESID    BITMAP    "Res\\AtributoS.bmp" /* SmallImages cmdCriarAtributo_SmallImages_RESID: (null) */
+cmdCriarAtributo_LargeImages_RESID    BITMAP    "Res\\AtributoL.bmp" /* LargeImages cmdCriarAtributo_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributoIdentificador_LabelTitle_RESID L"Atributo Identificador" /* LabelTitle cmdCriarAtributoIdentificador_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributoIdentificador_TooltipTitle_RESID L"Criar Atributo Identificador" /* TooltipTitle cmdCriarAtributoIdentificador_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributoIdentificador_TooltipDescription_RESID L" Permite criar um novo atributo identificador no modelo conceitual atual." /* TooltipDescription cmdCriarAtributoIdentificador_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarAtributoIdentificador_SmallImages_RESID    BITMAP    "Res\\AtributoIdentificadorS.bmp" /* SmallImages cmdCriarAtributoIdentificador_SmallImages_RESID: (null) */
+cmdCriarAtributoIdentificador_LargeImages_RESID    BITMAP    "Res\\AtributoIdentificadorL.bmp" /* LargeImages cmdCriarAtributoIdentificador_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributoComposto_LabelTitle_RESID L"Atributo Composto" /* LabelTitle cmdCriarAtributoComposto_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributoComposto_TooltipTitle_RESID L"Criar Atributo Composto" /* TooltipTitle cmdCriarAtributoComposto_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributoComposto_TooltipDescription_RESID L"Permite criar um novo atributo composto no modelo conceitual atual." /* TooltipDescription cmdCriarAtributoComposto_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarAtributoComposto_SmallImages_RESID    BITMAP    "Res\\AtributoCompostoS.bmp" /* SmallImages cmdCriarAtributoComposto_SmallImages_RESID: (null) */
+cmdCriarAtributoComposto_LargeImages_RESID    BITMAP    "Res\\AtributoCompostoL.bmp" /* LargeImages cmdCriarAtributoComposto_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributoMultivalorado_LabelTitle_RESID L"Atributo Multivalorado" /* LabelTitle cmdCriarAtributoMultivalorado_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributoMultivalorado_TooltipTitle_RESID L"Criar Atributo Multivalorado" /* TooltipTitle cmdCriarAtributoMultivalorado_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributoMultivalorado_TooltipDescription_RESID L"Permite criar um novo atributo multivalorado no modelo conceitual atual." /* TooltipDescription cmdCriarAtributoMultivalorado_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarAtributoMultivalorado_SmallImages_RESID    BITMAP    "Res\\AtributoMultivaloradoS.bmp" /* SmallImages cmdCriarAtributoMultivalorado_SmallImages_RESID: (null) */
+cmdCriarAtributoMultivalorado_LargeImages_RESID    BITMAP    "Res\\AtributoMultivaloradoL.bmp" /* LargeImages cmdCriarAtributoMultivalorado_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributoOpcional_LabelTitle_RESID L"Atributo Opcional" /* LabelTitle cmdCriarAtributoOpcional_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributoOpcional_TooltipTitle_RESID L"Criar Atributo Opcional" /* TooltipTitle cmdCriarAtributoOpcional_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarAtributoOpcional_TooltipDescription_RESID L"Permite criar um novo atributo opcional no modelo conceitual atual." /* TooltipDescription cmdCriarAtributoOpcional_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarAtributoOpcional_SmallImages_RESID    BITMAP    "Res\\AtributoOpcionalS.bmp" /* SmallImages cmdCriarAtributoOpcional_SmallImages_RESID: (null) */
+cmdCriarAtributoOpcional_LargeImages_RESID    BITMAP    "Res\\AtributoOpcionalL.bmp" /* LargeImages cmdCriarAtributoOpcional_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarRelacao_LabelTitle_RESID L"Rela\x00e7\x00e3o" /* LabelTitle cmdCriarRelacao_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarRelacao_TooltipTitle_RESID L"Criar Rela\x00e7\x00e3o" /* TooltipTitle cmdCriarRelacao_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarRelacao_TooltipDescription_RESID L"Permite criar uma nova rela\x00e7\x00e3o no modelo conceitual atual." /* TooltipDescription cmdCriarRelacao_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarRelacao_SmallImages_RESID    BITMAP    "Res\\EntidadeAssociativaS.bmp" /* SmallImages cmdCriarRelacao_SmallImages_RESID: (null) */
+cmdCriarRelacao_LargeImages_RESID    BITMAP    "Res\\EntidadeAssociativaL.bmp" /* LargeImages cmdCriarRelacao_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarEntidadeAssociativa_LabelTitle_RESID L"Entidade Associativa" /* LabelTitle cmdCriarEntidadeAssociativa_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarEntidadeAssociativa_TooltipTitle_RESID L"Criar Entidade Associativa" /* TooltipTitle cmdCriarEntidadeAssociativa_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarEntidadeAssociativa_TooltipDescription_RESID L"Permite criar uma nova entidade associativa no modelo conceitual atual." /* TooltipDescription cmdCriarEntidadeAssociativa_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarEntidadeAssociativa_SmallImages_RESID    BITMAP    "Res\\RelacaoS.bmp" /* SmallImages cmdCriarEntidadeAssociativa_SmallImages_RESID: (null) */
+cmdCriarEntidadeAssociativa_LargeImages_RESID    BITMAP    "Res\\RelacaoL.bmp" /* LargeImages cmdCriarEntidadeAssociativa_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarEspecializacao_LabelTitle_RESID L"Especializa\x00e7\x00e3o" /* LabelTitle cmdCriarEspecializacao_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarEspecializacao_TooltipTitle_RESID L"Criar Especializa\x00e7\x00e3o" /* TooltipTitle cmdCriarEspecializacao_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarEspecializacao_TooltipDescription_RESID L"Permite criar uma nova especializa\x00e7\x00e3o no modelo conceitual atual." /* TooltipDescription cmdCriarEspecializacao_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarEspecializacao_SmallImages_RESID    BITMAP    "Res\\EspecializacaoS.bmp" /* SmallImages cmdCriarEspecializacao_SmallImages_RESID: (null) */
+cmdCriarEspecializacao_LargeImages_RESID    BITMAP    "Res\\EspecializacaoL.bmp" /* LargeImages cmdCriarEspecializacao_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarEspecializacaoExcEntidade_LabelTitle_RESID L"Especializa\x00e7\x00e3o Exclusiva com Cria\x00e7\x00e3o de Entidade" /* LabelTitle cmdCriarEspecializacaoExcEntidade_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarEspecializacaoExcEntidade_TooltipTitle_RESID L"Criar Especializa\x00e7\x00e3o Exclusiva com Cria\x00e7\x00e3o de Entidade" /* TooltipTitle cmdCriarEspecializacaoExcEntidade_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarEspecializacaoExcEntidade_TooltipDescription_RESID L"Permite criar uma nova especializa\x00e7\x00e3o exclusiva com cria\x00e7\x00e3o de entidade no modelo conceitual atual." /* TooltipDescription cmdCriarEspecializacaoExcEntidade_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarEspecializacaoExcEntidade_SmallImages_RESID    BITMAP    "Res\\EspecializacaoExclusivaS.bmp" /* SmallImages cmdCriarEspecializacaoExcEntidade_SmallImages_RESID: (null) */
+cmdCriarEspecializacaoExcEntidade_LargeImages_RESID    BITMAP    "Res\\EspecializacaoExclusivaL.bmp" /* LargeImages cmdCriarEspecializacaoExcEntidade_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarEspecializacaoNaoExcEntidade_LabelTitle_RESID L"Especializa\x00e7\x00e3o N\x00e3o-Exclusiva com Cria\x00e7\x00e3o de Entidade" /* LabelTitle cmdCriarEspecializacaoNaoExcEntidade_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarEspecializacaoNaoExcEntidade_TooltipTitle_RESID L"Criar uma Especializa\x00e7\x00e3o N\x00e3o-Exclusiva com Cria\x00e7\x00e3o de Entidade" /* TooltipTitle cmdCriarEspecializacaoNaoExcEntidade_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarEspecializacaoNaoExcEntidade_TooltipDescription_RESID L"Permite criar uma nova especializa\x00e7\x00e3o n\x00e3o-exclusiva com cria\x00e7\x00e3o de entidade no modelo conceitual atual." /* TooltipDescription cmdCriarEspecializacaoNaoExcEntidade_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarEspecializacaoNaoExcEntidade_SmallImages_RESID    BITMAP    "Res\\EspecializacaoNaoExclusivaS.bmp" /* SmallImages cmdCriarEspecializacaoNaoExcEntidade_SmallImages_RESID: (null) */
+cmdCriarEspecializacaoNaoExcEntidade_LargeImages_RESID    BITMAP    "Res\\EspecializacaoNaoExclusiva.bmp" /* LargeImages cmdCriarEspecializacaoNaoExcEntidade_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdAutoRelacionar_LabelTitle_RESID L"Auto Relacionar" /* LabelTitle cmdAutoRelacionar_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdAutoRelacionar_TooltipTitle_RESID L"Criar um Auto Relacionamento" /* TooltipTitle cmdAutoRelacionar_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdAutoRelacionar_TooltipDescription_RESID L"Permite criar uma nova auto rela\x00e7\x00e3o no modelo conceitual atual." /* TooltipDescription cmdAutoRelacionar_TooltipDescription_RESID: (null) */
+END
+
+cmdAutoRelacionar_SmallImages_RESID    BITMAP    "Res\\AutoRelacionamentoS.bmp" /* SmallImages cmdAutoRelacionar_SmallImages_RESID: (null) */
+cmdAutoRelacionar_LargeImages_RESID    BITMAP    "Res\\AutorelacionamentoL.bmp" /* LargeImages cmdAutoRelacionar_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdLigarObjetos_LabelTitle_RESID L"Ligar Objetos" /* LabelTitle cmdLigarObjetos_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdLigarObjetos_TooltipTitle_RESID L"Ligar Objetos" /* TooltipTitle cmdLigarObjetos_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdLigarObjetos_TooltipDescription_RESID L"Permite criar uma nova liga\x00e7\x00e3o entre objetos no modelo conceitual atual." /* TooltipDescription cmdLigarObjetos_TooltipDescription_RESID: (null) */
+END
+
+cmdLigarObjetos_SmallImages_RESID    BITMAP    "Res\\LigacaoS.bmp" /* SmallImages cmdLigarObjetos_SmallImages_RESID: (null) */
+cmdLigarObjetos_LargeImages_RESID    BITMAP    "Res\\LigacaoL.bmp" /* LargeImages cmdLigarObjetos_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarObservacao_LabelTitle_RESID L"Observa\x00e7\x00e3o" /* LabelTitle cmdCriarObservacao_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarObservacao_TooltipTitle_RESID L"Criar Observa\x00e7\x00e3o" /* TooltipTitle cmdCriarObservacao_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarObservacao_TooltipDescription_RESID L"Permite criar uma nova observa\x00e7\x00e3o no modelo conceitual atual." /* TooltipDescription cmdCriarObservacao_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarObservacao_SmallImages_RESID    BITMAP    "Res\\TextoS.bmp" /* SmallImages cmdCriarObservacao_SmallImages_RESID: (null) */
+cmdCriarObservacao_LargeImages_RESID    BITMAP    "Res\\TextoL.bmp" /* LargeImages cmdCriarObservacao_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdApagarConceitual_LabelTitle_RESID L"Apagar" /* LabelTitle cmdApagarConceitual_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdApagarConceitual_TooltipTitle_RESID L"Apagar" /* TooltipTitle cmdApagarConceitual_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdApagarConceitual_TooltipDescription_RESID L"Permite apagar o objeto selecionado no modelo conceitual atual." /* TooltipDescription cmdApagarConceitual_TooltipDescription_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdExcluirSelecionadoConceitual_LabelTitle_RESID L"Excluir Objeto Selecionado" /* LabelTitle cmdExcluirSelecionadoConceitual_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdExcluirSelecionadoConceitual_TooltipTitle_RESID L"Excluir Objeto Selecionado" /* TooltipTitle cmdExcluirSelecionadoConceitual_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdExcluirSelecionadoConceitual_TooltipDescription_RESID L"Permite excluir o objeto selecionado do modelo conceitual atual." /* TooltipDescription cmdExcluirSelecionadoConceitual_TooltipDescription_RESID: (null) */
+END
+
+cmdExcluirSelecionadoConceitual_SmallImages_RESID    BITMAP    "Res\\Excluir2S.bmp" /* SmallImages cmdExcluirSelecionadoConceitual_SmallImages_RESID: (null) */
+cmdExcluirSelecionadoConceitual_LargeImages_RESID    BITMAP    "Res\\Excluir2L.bmp" /* LargeImages cmdExcluirSelecionadoConceitual_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdNovoLogico_LabelTitle_RESID L"Modelo L\x00f3gico" /* LabelTitle cmdNovoLogico_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdNovoLogico_LabelDescription_RESID L"Criar um novo Modelo L\x00f3gico" /* LabelDescription cmdNovoLogico_LabelDescription_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdNovoLogico_TooltipTitle_RESID L"Modelo L\x00f3gico" /* TooltipTitle cmdNovoLogico_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdNovoLogico_TooltipDescription_RESID L"Permite a cria\x00e7\x00e3o de um novo modelo l\x00f3gico." /* TooltipDescription cmdNovoLogico_TooltipDescription_RESID: (null) */
+END
+
+cmdNovoLogico_SmallImages_RESID    BITMAP    "Res\\ModeloLogicoS.bmp" /* SmallImages cmdNovoLogico_SmallImages_RESID: (null) */
+cmdNovoLogico_LargeImages_RESID    BITMAP    "Res\\ModeloLogicoL.bmp" /* LargeImages cmdNovoLogico_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdAbrir_LabelTitle_RESID L"Abrir" /* LabelTitle cmdAbrir_LabelTitle_RESID: (null) */
+END
+
+cmdAbrir_SmallImages_RESID    BITMAP    "Res\\Abrir2S.bmp" /* SmallImages cmdAbrir_SmallImages_RESID: (null) */
+cmdAbrir_LargeImages_RESID    BITMAP    "Res\\Abrir2L.bmp" /* LargeImages cmdAbrir_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdSalvar_LabelTitle_RESID L"Salvar" /* LabelTitle cmdSalvar_LabelTitle_RESID: (null) */
+END
+
+cmdSalvar_SmallImages_RESID    BITMAP    "Res\\SalvarS.bmp" /* SmallImages cmdSalvar_SmallImages_RESID: (null) */
+cmdSalvar_LargeImages_RESID    BITMAP    "Res\\SalvarL.bmp" /* LargeImages cmdSalvar_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdSalvarComo_LabelTitle_RESID L"Salvar Como ..." /* LabelTitle cmdSalvarComo_LabelTitle_RESID: (null) */
+END
+
+cmdSalvarComo_SmallImages_RESID    BITMAP    "Res\\SalvarComoS.bmp" /* SmallImages cmdSalvarComo_SmallImages_RESID: (null) */
+cmdSalvarComo_LargeImages_RESID    BITMAP    "Res\\SalvarComoL.bmp" /* LargeImages cmdSalvarComo_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdFechar_LabelTitle_RESID L"Fechar Modelo Atual" /* LabelTitle cmdFechar_LabelTitle_RESID: (null) */
+END
+
+cmdFechar_SmallImages_RESID    BITMAP    "Res\\Fechar2S.bmp" /* SmallImages cmdFechar_SmallImages_RESID: (null) */
+cmdFechar_LargeImages_RESID    BITMAP    "Res\\Fechar2L.bmp" /* LargeImages cmdFechar_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdExportarJPEG_LabelTitle_RESID L"Exportar em JPEG" /* LabelTitle cmdExportarJPEG_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdExportarJPEG_LabelDescription_RESID L"Permite exportar o modelo atual no formato JPEG." /* LabelDescription cmdExportarJPEG_LabelDescription_RESID: (null) */
+END
+
+cmdExportarJPEG_SmallImages_RESID    BITMAP    "Res\\ExportarJpegS.bmp" /* SmallImages cmdExportarJPEG_SmallImages_RESID: (null) */
+cmdExportarJPEG_LargeImages_RESID    BITMAP    "Res\\ExportarJpegL.bmp" /* LargeImages cmdExportarJPEG_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdExportarBMP_LabelTitle_RESID L"Exportar em BMP" /* LabelTitle cmdExportarBMP_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdExportarBMP_LabelDescription_RESID L"Permite exportar o modelo atual no formato BMP." /* LabelDescription cmdExportarBMP_LabelDescription_RESID: (null) */
+END
+
+cmdExportarBMP_SmallImages_RESID    BITMAP    "Res\\ExportarBitmapS.bmp" /* SmallImages cmdExportarBMP_SmallImages_RESID: (null) */
+cmdExportarBMP_LargeImages_RESID    BITMAP    "Res\\ExportarBitmapL.bmp" /* LargeImages cmdExportarBMP_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdImprimir_LabelTitle_RESID L"Imprimir" /* LabelTitle cmdImprimir_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdImprimir_LabelDescription_RESID L"Permite a impress\x00e3o do modelo corrente." /* LabelDescription cmdImprimir_LabelDescription_RESID: (null) */
+END
+
+cmdImprimir_SmallImages_RESID    BITMAP    "Res\\ImprimirS.bmp" /* SmallImages cmdImprimir_SmallImages_RESID: (null) */
+cmdImprimir_LargeImages_RESID    BITMAP    "Res\\ImprimirL.bmp" /* LargeImages cmdImprimir_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdGerarDicionario_LabelTitle_RESID L"Gerar Dicion\x00e1rio do Esquema" /* LabelTitle cmdGerarDicionario_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGerarDicionario_LabelDescription_RESID L"Permite gerar o dicion\x00e1rio de dados geral do esquema." /* LabelDescription cmdGerarDicionario_LabelDescription_RESID: (null) */
+END
+
+cmdGerarDicionario_SmallImages_RESID    BITMAP    "Res\\DicionarioDados3S.bmp" /* SmallImages cmdGerarDicionario_SmallImages_RESID: (null) */
+cmdGerarDicionario_LargeImages_RESID    BITMAP    "Res\\DicionarioDados3L.bmp" /* LargeImages cmdGerarDicionario_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdAjuda_LabelTitle_RESID L"Ajuda" /* LabelTitle cmdAjuda_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdConfiguracoes_LabelTitle_RESID L"Configura\x00e7\x00f5es" /* LabelTitle cmdConfiguracoes_LabelTitle_RESID: (null) */
+END
+
+cmdConfiguracoes_SmallImages_RESID    BITMAP    "Res\\Configuracoes2S.bmp" /* SmallImages cmdConfiguracoes_SmallImages_RESID: (null) */
+cmdConfiguracoes_LargeImages_RESID    BITMAP    "Res\\Configuracoes2L.bmp" /* LargeImages cmdConfiguracoes_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCancelarConceitual_LabelTitle_RESID L"Sele\x00e7\x00e3o" /* LabelTitle cmdCancelarConceitual_LabelTitle_RESID: (null) */
+END
+
+cmdCancelarConceitual_SmallImages_RESID    BITMAP    "Res\\CursorS.bmp" /* SmallImages cmdCancelarConceitual_SmallImages_RESID: (null) */
+cmdCancelarConceitual_LargeImages_RESID    BITMAP    "Res\\CursorL.bmp" /* LargeImages cmdCancelarConceitual_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCancelarLogico_LabelTitle_RESID L"Sele\x00e7\x00e3o" /* LabelTitle cmdCancelarLogico_LabelTitle_RESID: (null) */
+END
+
+cmdCancelarLogico_SmallImages_RESID    BITMAP    "Res\\CursorS.bmp" /* SmallImages cmdCancelarLogico_SmallImages_RESID: (null) */
+cmdCancelarLogico_LargeImages_RESID    BITMAP    "Res\\CursorL.bmp" /* LargeImages cmdCancelarLogico_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdAutoSalvar_LabelTitle_RESID L"Auto Salvar" /* LabelTitle cmdAutoSalvar_LabelTitle_RESID: (null) */
+END
+
+cmdAutoSalvar_SmallImages_RESID    BITMAP    "Res\\AutoSalvarS.bmp" /* SmallImages cmdAutoSalvar_SmallImages_RESID: (null) */
+cmdAutoSalvar_LargeImages_RESID    BITMAP    "Res\\AutoSalvarL.bmp" /* LargeImages cmdAutoSalvar_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdSair_LabelTitle_RESID L"Sair" /* LabelTitle cmdSair_LabelTitle_RESID: (null) */
+END
+
+cmdSair_SmallImages_RESID    BITMAP    "Res\\Sair_S096.bmp" /* SmallImages cmdSair_SmallImages_RESID: (null) */
+cmdSair_LargeImages_RESID    BITMAP    "Res\\Sair_L096.bmp" /* LargeImages cmdSair_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdSobre_LabelTitle_RESID L"Sobre o brModelo ..." /* LabelTitle cmdSobre_LabelTitle_RESID: (null) */
+END
+
+cmdSobre_SmallImages_RESID    BITMAP    "Res\\About2S.bmp" /* SmallImages cmdSobre_SmallImages_RESID: (null) */
+cmdSobre_LargeImages_RESID    BITMAP    "Res\\About2L.bmp" /* LargeImages cmdSobre_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdSiteBrModelo_LabelTitle_RESID L"Site do brModelo" /* LabelTitle cmdSiteBrModelo_LabelTitle_RESID: (null) */
+END
+
+cmdSiteBrModelo_SmallImages_RESID    BITMAP    "Res\\SiteS.bmp" /* SmallImages cmdSiteBrModelo_SmallImages_RESID: (null) */
+cmdSiteBrModelo_LargeImages_RESID    BITMAP    "Res\\SiteL.bmp" /* LargeImages cmdSiteBrModelo_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdAtributoMais_LabelTitle_RESID L"Atributo" /* LabelTitle cmdAtributoMais_LabelTitle_RESID: (null) */
+END
+
+cmdAtributoMais_SmallImages_RESID    BITMAP    "Res\\AtributoS.bmp" /* SmallImages cmdAtributoMais_SmallImages_RESID: (null) */
+cmdAtributoMais_LargeImages_RESID    BITMAP    "Res\\AtributoL.bmp" /* LargeImages cmdAtributoMais_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdEspecializacaoMais_LabelTitle_RESID L"Especializa\x00e7\x00e3o" /* LabelTitle cmdEspecializacaoMais_LabelTitle_RESID: (null) */
+END
+
+cmdEspecializacaoMais_SmallImages_RESID    BITMAP    "Res\\EspecializacaoS.bmp" /* SmallImages cmdEspecializacaoMais_SmallImages_RESID: (null) */
+cmdEspecializacaoMais_LargeImages_RESID    BITMAP    "Res\\EspecializacaoL.bmp" /* LargeImages cmdEspecializacaoMais_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdEntidadeMais_LabelTitle_RESID L"Entidade" /* LabelTitle cmdEntidadeMais_LabelTitle_RESID: (null) */
+END
+
+cmdEntidadeMais_SmallImages_RESID    BITMAP    "Res\\EntidadeS.bmp" /* SmallImages cmdEntidadeMais_SmallImages_RESID: (null) */
+cmdEntidadeMais_LargeImages_RESID    BITMAP    "Res\\EntidadeL.bmp" /* LargeImages cmdEntidadeMais_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdDesfazer_LabelTitle_RESID L"Desfazer" /* LabelTitle cmdDesfazer_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdDesfazer_TooltipDescription_RESID L"Desfazer" /* TooltipDescription cmdDesfazer_TooltipDescription_RESID: (null) */
+END
+
+cmdDesfazer_SmallImages_RESID    BITMAP    "Res\\UndoS.bmp" /* SmallImages cmdDesfazer_SmallImages_RESID: (null) */
+cmdDesfazer_LargeImages_RESID    BITMAP    "Res\\UndoL.bmp" /* LargeImages cmdDesfazer_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdRefazer_LabelTitle_RESID L"Refazer" /* LabelTitle cmdRefazer_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdRefazer_TooltipDescription_RESID L"Refazer" /* TooltipDescription cmdRefazer_TooltipDescription_RESID: (null) */
+END
+
+cmdRefazer_SmallImages_RESID    BITMAP    "Res\\RedoS.bmp" /* SmallImages cmdRefazer_SmallImages_RESID: (null) */
+cmdRefazer_LargeImages_RESID    BITMAP    "Res\\RedoL.bmp" /* LargeImages cmdRefazer_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdGroupClipboard_LabelTitle_RESID L"\x00c1rea de Transfer\x00eancia" /* LabelTitle cmdGroupClipboard_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdColar_LabelTitle_RESID L"Colar" /* LabelTitle cmdColar_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdColar_TooltipTitle_RESID L"Colar da \x00c1rea de Transfer\x00eancia" /* TooltipTitle cmdColar_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdColar_TooltipDescription_RESID L"Permite colar o conte\x00fado da \x00c1rea de Transfer\x00eancia no modelo corrente" /* TooltipDescription cmdColar_TooltipDescription_RESID: (null) */
+END
+
+cmdColar_SmallImages_RESID    BITMAP    "Res\\ColarS.bmp" /* SmallImages cmdColar_SmallImages_RESID: (null) */
+cmdColar_LargeImages_RESID    BITMAP    "Res\\ColarL.bmp" /* LargeImages cmdColar_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCopiar_LabelTitle_RESID L"Copiar" /* LabelTitle cmdCopiar_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCopiar_TooltipTitle_RESID L"Copiar para \x00c1rea de Transfer\x00eancia" /* TooltipTitle cmdCopiar_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCopiar_TooltipDescription_RESID L"Permite copiar o objeto selecionado no modelo corrente para a \x00c1rea de Transfer\x00eancia" /* TooltipDescription cmdCopiar_TooltipDescription_RESID: (null) */
+END
+
+cmdCopiar_SmallImages_RESID    BITMAP    "Res\\CopiarS.bmp" /* SmallImages cmdCopiar_SmallImages_RESID: (null) */
+cmdCopiar_LargeImages_RESID    BITMAP    "Res\\CopiarL.bmp" /* LargeImages cmdCopiar_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdRecortar_LabelTitle_RESID L"Recortar" /* LabelTitle cmdRecortar_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdRecortar_TooltipTitle_RESID L"Recortar para \x00c1rea de Transfer\x00eancia" /* TooltipTitle cmdRecortar_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdRecortar_TooltipDescription_RESID L"Permite recortar o objeto selecionado no modelo corrente para a \x00c1rea de Transfer\x00eancia" /* TooltipDescription cmdRecortar_TooltipDescription_RESID: (null) */
+END
+
+cmdRecortar_SmallImages_RESID    BITMAP    "Res\\RecortarS.bmp" /* SmallImages cmdRecortar_SmallImages_RESID: (null) */
+cmdRecortar_LargeImages_RESID    BITMAP    "Res\\RecortarL.bmp" /* LargeImages cmdRecortar_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdGroupEdicao_LabelTitle_RESID L"Edi\x00e7\x00e3o" /* LabelTitle cmdGroupEdicao_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarTabela_LabelTitle_RESID L"Tabela" /* LabelTitle cmdCriarTabela_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarTabela_TooltipTitle_RESID L"Criar Tabela" /* TooltipTitle cmdCriarTabela_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarTabela_TooltipDescription_RESID L"Permite criar uma nova tabela no modelo l\x00f3gico atual." /* TooltipDescription cmdCriarTabela_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarTabela_SmallImages_RESID    BITMAP    "Res\\TabelaS.bmp" /* SmallImages cmdCriarTabela_SmallImages_RESID: (null) */
+cmdCriarTabela_LargeImages_RESID    BITMAP    "Res\\TabelaL.bmp" /* LargeImages cmdCriarTabela_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarCampo_LabelTitle_RESID L"Campo" /* LabelTitle cmdCriarCampo_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarCampo_TooltipTitle_RESID L"Criar Campo" /* TooltipTitle cmdCriarCampo_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarCampo_TooltipDescription_RESID L"Permite criar um novo campo no modelo l\x00f3gico atual." /* TooltipDescription cmdCriarCampo_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarCampo_SmallImages_RESID    BITMAP    "Res\\CampoS.bmp" /* SmallImages cmdCriarCampo_SmallImages_RESID: (null) */
+cmdCriarCampo_LargeImages_RESID    BITMAP    "Res\\CampoL.bmp" /* LargeImages cmdCriarCampo_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarRelacionamento_LabelTitle_RESID L"Relacionamento" /* LabelTitle cmdCriarRelacionamento_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarRelacionamento_TooltipTitle_RESID L"Criar Relacionamento" /* TooltipTitle cmdCriarRelacionamento_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarRelacionamento_TooltipDescription_RESID L"Permite criar um novo relacionamento no modelo l\x00f3gico atual." /* TooltipDescription cmdCriarRelacionamento_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarRelacionamento_SmallImages_RESID    BITMAP    "Res\\RelacionamentoS.bmp" /* SmallImages cmdCriarRelacionamento_SmallImages_RESID: (null) */
+cmdCriarRelacionamento_LargeImages_RESID    BITMAP    "Res\\RelacionamentoL.bmp" /* LargeImages cmdCriarRelacionamento_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarChaveEstrangeira_LabelTitle_RESID L"Chave Estrangeira" /* LabelTitle cmdCriarChaveEstrangeira_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarChaveEstrangeira_TooltipTitle_RESID L"Criar Chave Estrangeira" /* TooltipTitle cmdCriarChaveEstrangeira_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarChaveEstrangeira_TooltipDescription_RESID L"Permite criar uma nova chave estrangeira no modelo l\x00f3gico atual." /* TooltipDescription cmdCriarChaveEstrangeira_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarChaveEstrangeira_SmallImages_RESID    BITMAP    "Res\\ChaveEstrangeiraS.bmp" /* SmallImages cmdCriarChaveEstrangeira_SmallImages_RESID: (null) */
+cmdCriarChaveEstrangeira_LargeImages_RESID    BITMAP    "Res\\ChaveEstrangeiraL.bmp" /* LargeImages cmdCriarChaveEstrangeira_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarChavePrimaria_LabelTitle_RESID L"Chave Prim\x00e1ria" /* LabelTitle cmdCriarChavePrimaria_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarChavePrimaria_TooltipTitle_RESID L"Criar Chave Prim\x00e1ria" /* TooltipTitle cmdCriarChavePrimaria_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarChavePrimaria_TooltipDescription_RESID L"Permite criar uma nova chave prim\x00e1ria no modelo l\x00f3gico atual." /* TooltipDescription cmdCriarChavePrimaria_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarChavePrimaria_SmallImages_RESID    BITMAP    "Res\\ChavePrimariaS.bmp" /* SmallImages cmdCriarChavePrimaria_SmallImages_RESID: (null) */
+cmdCriarChavePrimaria_LargeImages_RESID    BITMAP    "Res\\ChavePrimariaL.bmp" /* LargeImages cmdCriarChavePrimaria_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdCriarSeparadosCampos_LabelTitle_RESID L"Separador de Campos" /* LabelTitle cmdCriarSeparadosCampos_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarSeparadosCampos_TooltipTitle_RESID L"Criar Separador de Campos" /* TooltipTitle cmdCriarSeparadosCampos_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdCriarSeparadosCampos_TooltipDescription_RESID L"Permite criar um novo separador de campos no modelo l\x00f3gico atual." /* TooltipDescription cmdCriarSeparadosCampos_TooltipDescription_RESID: (null) */
+END
+
+cmdCriarSeparadosCampos_SmallImages_RESID    BITMAP    "Res\\SeparadorCamposS.bmp" /* SmallImages cmdCriarSeparadosCampos_SmallImages_RESID: (null) */
+cmdCriarSeparadosCampos_LargeImages_RESID    BITMAP    "Res\\SeparadorCamposL.bmp" /* LargeImages cmdCriarSeparadosCampos_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdGroupDocumentacao_LabelTitle_RESID L"Documenta\x00e7\x00e3o" /* LabelTitle cmdGroupDocumentacao_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdVisualizarXML_LabelTitle_RESID L"Visualizar Esquema XML com XSLT" /* LabelTitle cmdVisualizarXML_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdVisualizarXML_TooltipTitle_RESID L"Visualizar Esquema XML com XSLT" /* TooltipTitle cmdVisualizarXML_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdVisualizarXML_TooltipDescription_RESID L"Permite a visualiza\x00e7\x00e3o do esquema XML do modelo atual." /* TooltipDescription cmdVisualizarXML_TooltipDescription_RESID: (null) */
+END
+
+cmdVisualizarXML_SmallImages_RESID    BITMAP    "Res\\VisualizarS.bmp" /* SmallImages cmdVisualizarXML_SmallImages_RESID: (null) */
+cmdVisualizarXML_LargeImages_RESID    BITMAP    "Res\\VisualizarL.bmp" /* LargeImages cmdVisualizarXML_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdExibirLog_LabelTitle_RESID L"Exibir Log de Opera\x00e7\x00f5es" /* LabelTitle cmdExibirLog_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdExibirLog_TooltipTitle_RESID L"Exibir Log de Opera\x00e7\x00f5es" /* TooltipTitle cmdExibirLog_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdExibirLog_TooltipDescription_RESID L"Permite visualizar o log de todas as opera\x00e7\x00f5es da aplica\x00e7\x00e3o." /* TooltipDescription cmdExibirLog_TooltipDescription_RESID: (null) */
+END
+
+cmdExibirLog_SmallImages_RESID    BITMAP    "Res\\LogS.bmp" /* SmallImages cmdExibirLog_SmallImages_RESID: (null) */
+cmdExibirLog_LargeImages_RESID    BITMAP    "Res\\LogL.bmp" /* LargeImages cmdExibirLog_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdLimparLog_LabelTitle_RESID L"Limpar Log" /* LabelTitle cmdLimparLog_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdLimparLog_TooltipTitle_RESID L"Limpar Log" /* TooltipTitle cmdLimparLog_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdLimparLog_TooltipDescription_RESID L"Permite limpar o log de opera\x00e7\x00f5es da aplica\x00e7\x00e3o." /* TooltipDescription cmdLimparLog_TooltipDescription_RESID: (null) */
+END
+
+cmdLimparLog_SmallImages_RESID    BITMAP    "Res\\ApagarS.bmp" /* SmallImages cmdLimparLog_SmallImages_RESID: (null) */
+cmdLimparLog_LargeImages_RESID    BITMAP    "Res\\ApagarL.bmp" /* LargeImages cmdLimparLog_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdSalvarLog_LabelTitle_RESID L"Salvar Log" /* LabelTitle cmdSalvarLog_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdSalvarLog_TooltipTitle_RESID L"Salvar Log" /* TooltipTitle cmdSalvarLog_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdSalvarLog_TooltipDescription_RESID L"Permite salvar o log de opera\x00e7\x00e3o da aplica\x00e7\x00e3o." /* TooltipDescription cmdSalvarLog_TooltipDescription_RESID: (null) */
+END
+
+cmdSalvarLog_SmallImages_RESID    BITMAP    "Res\\SalvarS.bmp" /* SmallImages cmdSalvarLog_SmallImages_RESID: (null) */
+cmdSalvarLog_LargeImages_RESID    BITMAP    "Res\\SalvarL.bmp" /* LargeImages cmdSalvarLog_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdGroupFonte_LabelTitle_RESID L"Fonte" /* LabelTitle cmdGroupFonte_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdSelecionarFonte_LabelTitle_RESID L"Selecionar Fonte ..." /* LabelTitle cmdSelecionarFonte_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdSelecionarFonte_TooltipTitle_RESID L"Selecionar Fonte" /* TooltipTitle cmdSelecionarFonte_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdSelecionarFonte_TooltipDescription_RESID L"Permite selecionar a fonte do objeto selecionado." /* TooltipDescription cmdSelecionarFonte_TooltipDescription_RESID: (null) */
+END
+
+cmdSelecionarFonte_SmallImages_RESID    BITMAP    "Res\\FonteS.bmp" /* SmallImages cmdSelecionarFonte_SmallImages_RESID: (null) */
+cmdSelecionarFonte_LargeImages_RESID    BITMAP    "Res\\FonteL.bmp" /* LargeImages cmdSelecionarFonte_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdEditarTemplateConversao_LabelTitle_RESID L"Editar Template de Convers\x00e3o" /* LabelTitle cmdEditarTemplateConversao_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupOperacoesConceitual_LabelTitle_RESID L"Opera\x00e7\x00f5es" /* LabelTitle cmdGroupOperacoesConceitual_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdOcultarAtributo_LabelTitle_RESID L"Ocultar Atributo" /* LabelTitle cmdOcultarAtributo_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdOrganizarAtributos_LabelTitle_RESID L"Organizar Atributos" /* LabelTitle cmdOrganizarAtributos_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdSelecionarAtributo_LabelTitle_RESID L"Selecionar Atributo" /* LabelTitle cmdSelecionarAtributo_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdPromoverEntidadeAssociativa_LabelTitle_RESID L"Promover \x00e0 Entidade Associativa" /* LabelTitle cmdPromoverEntidadeAssociativa_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdPromoverEntidade_LabelTitle_RESID L"Promover \x00e0 Entidade" /* LabelTitle cmdPromoverEntidade_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdConverterEspParaRestrita_LabelTitle_RESID L"Converter Esp. para Restrita" /* LabelTitle cmdConverterEspParaRestrita_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdConverterEspParaOpcional_LabelTitle_RESID L"Converter Esp. para Opcional" /* LabelTitle cmdConverterEspParaOpcional_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdDicionarioDadosObjConceitual_LabelTitle_RESID L"Dicion\x00e1rio de Dados do Objeto" /* LabelTitle cmdDicionarioDadosObjConceitual_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGerarEsquemaLogico_LabelTitle_RESID L"Gerar Esquema L\x00f3gico" /* LabelTitle cmdGerarEsquemaLogico_LabelTitle_RESID: (null) */
+END
+
+cmdGerarEsquemaLogico_SmallImages_RESID    BITMAP    "Res\\GerarLogicoS.bmp" /* SmallImages cmdGerarEsquemaLogico_SmallImages_RESID: (null) */
+cmdGerarEsquemaLogico_LargeImages_RESID    BITMAP    "Res\\GerarLogicoL.bmp" /* LargeImages cmdGerarEsquemaLogico_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdOperacoesConceitualMais_LabelTitle_RESID L"Opera\x00e7\x00f5es" /* LabelTitle cmdOperacoesConceitualMais_LabelTitle_RESID: (null) */
+END
+
+cmdOperacoesConceitualMais_SmallImages_RESID    BITMAP    "Res\\OperacoesS.bmp" /* SmallImages cmdOperacoesConceitualMais_SmallImages_RESID: (null) */
+cmdOperacoesConceitualMais_LargeImages_RESID    BITMAP    "Res\\OperacoesL.bmp" /* LargeImages cmdOperacoesConceitualMais_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdGerarEsquemaFisico_LabelTitle_RESID L"Gerar Esquema F\x00edsico" /* LabelTitle cmdGerarEsquemaFisico_LabelTitle_RESID: (null) */
+END
+
+cmdGerarEsquemaFisico_SmallImages_RESID    BITMAP    "Res\\GerarFisicoS.bmp" /* SmallImages cmdGerarEsquemaFisico_SmallImages_RESID: (null) */
+cmdGerarEsquemaFisico_LargeImages_RESID    BITMAP    "Res\\GerarFisicoL.bmp" /* LargeImages cmdGerarEsquemaFisico_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdGroupOperacoesLogico_LabelTitle_RESID L"Opera\x00e7\x00f5es" /* LabelTitle cmdGroupOperacoesLogico_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdOperacoesLogicoMais_LabelTitle_RESID L"Opera\x00e7\x00f5es" /* LabelTitle cmdOperacoesLogicoMais_LabelTitle_RESID: (null) */
+END
+
+cmdOperacoesLogicoMais_SmallImages_RESID    BITMAP    "Res\\OperacoesS.bmp" /* SmallImages cmdOperacoesLogicoMais_SmallImages_RESID: (null) */
+cmdOperacoesLogicoMais_LargeImages_RESID    BITMAP    "Res\\OperacoesL.bmp" /* LargeImages cmdOperacoesLogicoMais_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdDicionarioDadosObjLogico_LabelTitle_RESID L"Dicion\x00e1rio de Dados do Objeto" /* LabelTitle cmdDicionarioDadosObjLogico_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdIncluirAlterarXLS_LabelTitle_RESID L"Incluir/Alterar Arquivo de Formata\x00e7\x00e3o XSL" /* LabelTitle cmdIncluirAlterarXLS_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdModelosRecentes_LabelTitle_RESID L"Modelos Recentes" /* LabelTitle cmdModelosRecentes_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdHeaderExportar_LabelTitle_RESID L"Exporta\x00e7\x00e3o" /* LabelTitle cmdHeaderExportar_LabelTitle_RESID: (null) */
+END
+
+cmdHeaderExportar_SmallImages_RESID    BITMAP    "Res\\ExportS.bmp" /* SmallImages cmdHeaderExportar_SmallImages_RESID: (null) */
+cmdHeaderExportar_LargeImages_RESID    BITMAP    "Res\\ExportL.bmp" /* LargeImages cmdHeaderExportar_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdExportarSubMenu_LabelTitle_RESID L"Exportar o Modelo Atual" /* LabelTitle cmdExportarSubMenu_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdHeaderNovoModelo_LabelTitle_RESID L"Novo Modelo" /* LabelTitle cmdHeaderNovoModelo_LabelTitle_RESID: (null) */
+END
+
+cmdHeaderNovoModelo_SmallImages_RESID    BITMAP    "Res\\NovoS.bmp" /* SmallImages cmdHeaderNovoModelo_SmallImages_RESID: (null) */
+cmdHeaderNovoModelo_LargeImages_RESID    BITMAP    "Res\\NovoL.bmp" /* LargeImages cmdHeaderNovoModelo_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdNovoModeloSubMenu_LabelTitle_RESID L"Criar novo Modelo" /* LabelTitle cmdNovoModeloSubMenu_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdHeaderDocumentosRecentes_LabelTitle_RESID L"Modelos Utilizados Recentemente" /* LabelTitle cmdHeaderDocumentosRecentes_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdHeaderImpressao_LabelTitle_RESID L"Impress\x00e3o" /* LabelTitle cmdHeaderImpressao_LabelTitle_RESID: (null) */
+END
+
+cmdHeaderImpressao_SmallImages_RESID    BITMAP    "Res\\ImprimirS.bmp" /* SmallImages cmdHeaderImpressao_SmallImages_RESID: (null) */
+cmdHeaderImpressao_LargeImages_RESID    BITMAP    "Res\\ImprimirL.bmp" /* LargeImages cmdHeaderImpressao_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdImpressaoSubMenu_LabelTitle_RESID L"Impress\x00e3o de Modelos" /* LabelTitle cmdImpressaoSubMenu_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdImprimirMais_LabelTitle_RESID L"Imprimir" /* LabelTitle cmdImprimirMais_LabelTitle_RESID: (null) */
+END
+
+cmdImprimirMais_SmallImages_RESID    BITMAP    "Res\\ImprimirS.bmp" /* SmallImages cmdImprimirMais_SmallImages_RESID: (null) */
+cmdImprimirMais_LargeImages_RESID    BITMAP    "Res\\ImprimirL.bmp" /* LargeImages cmdImprimirMais_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdDocRecentes_LabelTitle_RESID L"Documentos Recentes" /* LabelTitle cmdDocRecentes_LabelTitle_RESID: (null) */
+END
+
+APPLICATION_RIBBON    UIFILE    "D:\\Dropbox\\Puc (MG)\\Trabalho de Conclusão de Curso II - 32h\\Aplicação\\Fontes\\Ribbon\\RibbonMarkup.bml"

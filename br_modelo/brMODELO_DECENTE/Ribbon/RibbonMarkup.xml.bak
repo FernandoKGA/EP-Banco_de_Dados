@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application xmlns="http://schemas.microsoft.com/windows/2009/Ribbon">
+  <Application.Commands>
+    <Command Name="cmdTabOpcoes" LabelTitle="Opções"/>
+    <Command Name="cmdTabConceitual" LabelTitle="Esquema Conceitual"/>
+    <Command Name="cmdTabLogico" LabelTitle="Esquema Lógico"/>
+    <Command Name="cmdTabConfiguracao" LabelTitle="Configurações"/>
+    <Command Name="cmdGroupOpcoes" LabelTitle="Opções"/>
+    <Command Name="cmdGroupFerramentasConceitual" LabelTitle="Ferramentas"/>
+    <Command Name="cmdGroupFerramentasLogico" LabelTitle="Ferramentas"/>
+    <Command Name="cmdGroupComandosConceitual" LabelTitle="Comandos"/>
+    <Command Name="cmdGroupComandosLogico" LabelTitle="Comandos"/>
+    <Command Name="cmdNovoConceitual" LabelTitle="Modelo Conceitual" LabelDescription="Criar um novo modelo conceitual" TooltipTitle="Modelo Conceitual" TooltipDescription="Permite a criação de um novo modelo conceitual.">
+      <Command.SmallImages>
+        <Image>Res/ModeloConceitual2S.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/ModeloConceitual2L.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarEntidade" LabelTitle="Entidade" TooltipTitle="Criar Entidade" TooltipDescription="Permite criar um nova entidade no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/EntidadeS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/EntidadeL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarAtributo" LabelTitle="Atributo" TooltipTitle="Criar Atributo" TooltipDescription="Permite criar um novo atributo no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/AtributoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/AtributoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarAtributoIdentificador" LabelTitle="Atributo Identificador" TooltipTitle="Criar Atributo Identificador" TooltipDescription=" Permite criar um novo atributo identificador no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/AtributoIdentificadorS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/AtributoIdentificadorL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarAtributoComposto" LabelTitle="Atributo Composto" TooltipTitle="Criar Atributo Composto" TooltipDescription="Permite criar um novo atributo composto no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/AtributoCompostoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/AtributoCompostoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarAtributoMultivalorado" LabelTitle="Atributo Multivalorado" TooltipTitle="Criar Atributo Multivalorado" TooltipDescription="Permite criar um novo atributo multivalorado no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/AtributoMultivaloradoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/AtributoMultivaloradoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarAtributoOpcional" LabelTitle="Atributo Opcional" TooltipTitle="Criar Atributo Opcional" TooltipDescription="Permite criar um novo atributo opcional no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/AtributoOpcionalS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/AtributoOpcionalL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarRelacao" LabelTitle="Relação" TooltipTitle="Criar Relação" TooltipDescription="Permite criar uma nova relação no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/EntidadeAssociativaS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/EntidadeAssociativaL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarEntidadeAssociativa" LabelTitle="Entidade Associativa" TooltipTitle="Criar Entidade Associativa" TooltipDescription="Permite criar uma nova entidade associativa no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/RelacaoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/RelacaoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarEspecializacao" LabelTitle="Especialização" TooltipTitle="Criar Especialização" TooltipDescription="Permite criar uma nova especialização no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/EspecializacaoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/EspecializacaoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarEspecializacaoExcEntidade" LabelTitle="Especialização Exclusiva com Criação de Entidade" TooltipTitle="Criar Especialização Exclusiva com Criação de Entidade" TooltipDescription="Permite criar uma nova especialização exclusiva com criação de entidade no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/EspecializacaoExclusivaS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/EspecializacaoExclusivaL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarEspecializacaoNaoExcEntidade" LabelTitle="Especialização Não-Exclusiva com Criação de Entidade" TooltipTitle="Criar uma Especialização Não-Exclusiva com Criação de Entidade" TooltipDescription="Permite criar uma nova especialização não-exclusiva com criação de entidade no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/EspecializacaoNaoExclusivaS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/EspecializacaoNaoExclusiva.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdAutoRelacionar" LabelTitle="Auto Relacionar" TooltipTitle="Criar um Auto Relacionamento" TooltipDescription="Permite criar uma nova auto relação no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/AutoRelacionamentoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/AutorelacionamentoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdLigarObjetos" LabelTitle="Ligar Objetos" TooltipTitle="Ligar Objetos" TooltipDescription="Permite criar uma nova ligação entre objetos no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/LigacaoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/LigacaoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarObservacao" LabelTitle="Observação" TooltipTitle="Criar Observação" TooltipDescription="Permite criar uma nova observação no modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/TextoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/TextoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdApagarConceitual" LabelTitle="Apagar" TooltipTitle="Apagar" TooltipDescription="Permite apagar o objeto selecionado no modelo conceitual atual."/>
+    <Command Name="cmdExcluirSelecionadoConceitual" LabelTitle="Excluir Objeto Selecionado" TooltipTitle="Excluir Objeto Selecionado" TooltipDescription="Permite excluir o objeto selecionado do modelo conceitual atual.">
+      <Command.SmallImages>
+        <Image>Res/Excluir2S.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/Excluir2L.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdNovoLogico" LabelTitle="Modelo Lógico" LabelDescription="Criar um novo Modelo Lógico" TooltipTitle="Modelo Lógico" TooltipDescription="Permite a criação de um novo modelo lógico.">
+      <Command.SmallImages>
+        <Image>Res/ModeloLogicoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/ModeloLogicoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdAbrir" LabelTitle="Abrir">
+      <Command.SmallImages>
+        <Image>Res/Abrir2S.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/Abrir2L.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdSalvar" LabelTitle="Salvar">
+      <Command.SmallImages>
+        <Image>Res/SalvarS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/SalvarL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdSalvarComo" LabelTitle="Salvar Como ...">
+      <Command.SmallImages>
+        <Image>Res/SalvarComoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/SalvarComoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdFechar" LabelTitle="Fechar Modelo Atual">
+      <Command.SmallImages>
+        <Image>Res/Fechar2S.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/Fechar2L.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdExportarJPEG" LabelTitle="Exportar em JPEG" LabelDescription="Permite exportar o modelo atual no formato JPEG.">
+      <Command.SmallImages>
+        <Image>Res/ExportarJpegS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/ExportarJpegL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdExportarBMP" LabelTitle="Exportar em BMP" LabelDescription="Permite exportar o modelo atual no formato BMP.">
+      <Command.SmallImages>
+        <Image>Res/ExportarBitmapS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/ExportarBitmapL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdImprimir" LabelTitle="Imprimir" LabelDescription="Permite a impressão do modelo corrente.">
+      <Command.SmallImages>
+        <Image>Res/ImprimirS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/ImprimirL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdGerarDicionario" LabelTitle="Gerar Dicionário do Esquema" LabelDescription="Permite gerar o dicionário de dados geral do esquema.">
+      <Command.SmallImages>
+        <Image>Res/DicionarioDados3S.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/DicionarioDados3L.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdAjuda" LabelTitle="Ajuda"/>
+    <Command Name="cmdConfiguracoes" LabelTitle="Configurações">
+      <Command.SmallImages>
+        <Image>Res/Configuracoes2S.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/Configuracoes2L.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCancelarConceitual" LabelTitle="Seleção">
+      <Command.SmallImages>
+        <Image>Res/CursorS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/CursorL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCancelarLogico" LabelTitle="Seleção">
+      <Command.SmallImages>
+        <Image>Res/CursorS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/CursorL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdAutoSalvar" LabelTitle="Auto Salvar">
+      <Command.SmallImages>
+        <Image>Res/AutoSalvarS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/AutoSalvarL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdSair" LabelTitle="Sair">
+      <Command.SmallImages>
+        <Image>Res/Sair_S096.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/Sair_L096.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdSobre" LabelTitle="Sobre o brModelo ...">
+      <Command.SmallImages>
+        <Image>Res/About2S.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/About2L.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdSiteBrModelo" LabelTitle="Site do brModelo">
+      <Command.SmallImages>
+        <Image>Res/SiteS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/SiteL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdAtributoMais" LabelTitle="Atributo">
+      <Command.SmallImages>
+        <Image>Res/AtributoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/AtributoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdEspecializacaoMais" LabelTitle="Especialização">
+      <Command.SmallImages>
+        <Image>Res/EspecializacaoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/EspecializacaoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdEntidadeMais" LabelTitle="Entidade">
+      <Command.SmallImages>
+        <Image>Res/EntidadeS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/EntidadeL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdDesfazer" LabelTitle="Desfazer" TooltipDescription="Desfazer">
+      <Command.SmallImages>
+        <Image>Res/UndoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/UndoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdRefazer" LabelTitle="Refazer" TooltipDescription="Refazer">
+      <Command.SmallImages>
+        <Image>Res/RedoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/RedoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdGroupClipboard" LabelTitle="Área de Transferência"/>
+    <Command Name="cmdColar" LabelTitle="Colar" TooltipTitle="Colar da Área de Transferência" TooltipDescription="Permite colar o conteúdo da Área de Transferência no modelo corrente">
+      <Command.SmallImages>
+        <Image>Res/ColarS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/ColarL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCopiar" LabelTitle="Copiar" TooltipTitle="Copiar para Área de Transferência" TooltipDescription="Permite copiar o objeto selecionado no modelo corrente para a Área de Transferência">
+      <Command.SmallImages>
+        <Image>Res/CopiarS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/CopiarL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdRecortar" LabelTitle="Recortar" TooltipTitle="Recortar para Área de Transferência" TooltipDescription="Permite recortar o objeto selecionado no modelo corrente para a Área de Transferência">
+      <Command.SmallImages>
+        <Image>Res/RecortarS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/RecortarL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdGroupEdicao" LabelTitle="Edição"/>
+    <Command Name="cmdCriarTabela" LabelTitle="Tabela" TooltipTitle="Criar Tabela" TooltipDescription="Permite criar uma nova tabela no modelo lógico atual.">
+      <Command.SmallImages>
+        <Image>Res/TabelaS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/TabelaL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarCampo" LabelTitle="Campo" TooltipTitle="Criar Campo" TooltipDescription="Permite criar um novo campo no modelo lógico atual.">
+      <Command.SmallImages>
+        <Image>Res/CampoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/CampoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarRelacionamento" LabelTitle="Relacionamento" TooltipTitle="Criar Relacionamento" TooltipDescription="Permite criar um novo relacionamento no modelo lógico atual.">
+      <Command.SmallImages>
+        <Image>Res/RelacionamentoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/RelacionamentoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarChaveEstrangeira" LabelTitle="Chave Estrangeira" TooltipTitle="Criar Chave Estrangeira" TooltipDescription="Permite criar uma nova chave estrangeira no modelo lógico atual.">
+      <Command.SmallImages>
+        <Image>Res/ChaveEstrangeiraS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/ChaveEstrangeiraL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarChavePrimaria" LabelTitle="Chave Primária" TooltipTitle="Criar Chave Primária" TooltipDescription="Permite criar uma nova chave primária no modelo lógico atual.">
+      <Command.SmallImages>
+        <Image>Res/ChavePrimariaS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/ChavePrimariaL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdCriarSeparadosCampos" LabelTitle="Separador de Campos" TooltipTitle="Criar Separador de Campos" TooltipDescription="Permite criar um novo separador de campos no modelo lógico atual.">
+      <Command.SmallImages>
+        <Image>Res/SeparadorCamposS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/SeparadorCamposL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdGroupDocumentacao" LabelTitle="Documentação"/>
+    <Command Name="cmdVisualizarXML" LabelTitle="Visualizar Esquema XML com XSLT" TooltipTitle="Visualizar Esquema XML com XSLT" TooltipDescription="Permite a visualização do esquema XML do modelo atual.">
+      <Command.SmallImages>
+        <Image>Res/VisualizarS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/VisualizarL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdExibirLog" LabelTitle="Exibir Log de Operações" TooltipTitle="Exibir Log de Operações" TooltipDescription="Permite visualizar o log de todas as operações da aplicação.">
+      <Command.SmallImages>
+        <Image>Res/LogS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/LogL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdLimparLog" LabelTitle="Limpar Log" TooltipTitle="Limpar Log" TooltipDescription="Permite limpar o log de operações da aplicação.">
+      <Command.SmallImages>
+        <Image>Res/ApagarS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/ApagarL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdSalvarLog" LabelTitle="Salvar Log" TooltipTitle="Salvar Log" TooltipDescription="Permite salvar o log de operação da aplicação.">
+      <Command.SmallImages>
+        <Image>Res/SalvarS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/SalvarL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdGroupFonte" LabelTitle="Fonte"/>
+    <Command Name="cmdSelecionarFonte" LabelTitle="Selecionar Fonte ..." TooltipTitle="Selecionar Fonte" TooltipDescription="Permite selecionar a fonte do objeto selecionado.">
+      <Command.SmallImages>
+        <Image>Res/FonteS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/FonteL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdEditarTemplateConversao" LabelTitle="Editar Template de Conversão"/>
+    <Command Name="cmdGroupOperacoesConceitual" LabelTitle="Operações"/>
+    <Command Name="cmdOcultarAtributo" LabelTitle="Ocultar Atributo"/>
+    <Command Name="cmdOrganizarAtributos" LabelTitle="Organizar Atributos"/>
+    <Command Name="cmdSelecionarAtributo" LabelTitle="Selecionar Atributo"/>
+    <Command Name="cmdPromoverEntidadeAssociativa" LabelTitle="Promover à Entidade Associativa"/>
+    <Command Name="cmdPromoverEntidade" LabelTitle="Promover à Entidade"/>
+    <Command Name="cmdConverterEspParaRestrita" LabelTitle="Converter Esp. para Restrita"/>
+    <Command Name="cmdConverterEspParaOpcional" LabelTitle="Converter Esp. para Opcional"/>
+    <Command Name="cmdDicionarioDadosObjConceitual" LabelTitle="Dicionário de Dados do Objeto"/>
+    <Command Name="cmdGerarEsquemaLogico" LabelTitle="Gerar Esquema Lógico">
+      <Command.SmallImages>
+        <Image>Res/GerarLogicoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/GerarLogicoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdOperacoesConceitualMais" LabelTitle="Operações">
+      <Command.SmallImages>
+        <Image>Res/OperacoesS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/OperacoesL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdGerarEsquemaFisico" LabelTitle="Gerar Esquema Físico">
+      <Command.SmallImages>
+        <Image>Res/GerarFisicoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/GerarFisicoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdGroupOperacoesLogico" LabelTitle="Operações"/>
+    <Command Name="cmdOperacoesLogicoMais" LabelTitle="Operações">
+      <Command.SmallImages>
+        <Image>Res/OperacoesS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/OperacoesL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdDicionarioDadosObjLogico" LabelTitle="Dicionário de Dados do Objeto"/>
+    <Command Name="cmdIncluirAlterarXLS" LabelTitle="Incluir/Alterar Arquivo de Formatação XSL"/>
+    <Command Name="cmdModelosRecentes" LabelTitle="Modelos Recentes"/>
+    <Command Name="cmdHeaderExportar" LabelTitle="Exportação">
+      <Command.SmallImages>
+        <Image>Res/ExportS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/ExportL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdExportarSubMenu" LabelTitle="Exportar o Modelo Atual"/>
+    <Command Name="cmdHeaderNovoModelo" LabelTitle="Novo Modelo">
+      <Command.SmallImages>
+        <Image>Res/NovoS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/NovoL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdNovoModeloSubMenu" LabelTitle="Criar novo Modelo"/>
+    <Command Name="cmdHeaderDocumentosRecentes" LabelTitle="Modelos Utilizados Recentemente"/>
+    <Command Name="cmdHeaderImpressao" LabelTitle="Impressão">
+      <Command.SmallImages>
+        <Image>Res/ImprimirS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/ImprimirL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdImpressaoSubMenu" LabelTitle="Impressão de Modelos"/>
+    <Command Name="cmdImprimirMais" LabelTitle="Imprimir">
+      <Command.SmallImages>
+        <Image>Res/ImprimirS.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/ImprimirL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdDocRecentes" LabelTitle="Documentos Recentes"/>
+  </Application.Commands>
+  <Application.Views>
+    <Ribbon Name="brModelo" GroupSpacing="Large">
+      <Ribbon.SizeDefinitions>
+        <SizeDefinition Name="FerramentasConceitual">
+          <ControlNameMap>
+            <ControlNameDefinition Name="BotaoCancelarConceitual"/>
+            <ControlNameDefinition Name="BotaoAtributo"/>
+            <ControlNameDefinition Name="BotaoEspecializacao"/>
+            <ControlNameDefinition Name="BotaoEntidade"/>
+            <ControlNameDefinition Name="BotaoAutoRelacionar"/>
+            <ControlNameDefinition Name="BotaoLigarObjetos"/>
+            <ControlNameDefinition Name="BotaoTexto"/>
+            <ControlNameDefinition Name="BotaoExcluir"/>
+          </ControlNameMap>
+          <GroupSizeDefinition Size="Large">
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoCancelarConceitual"/>
+            <ColumnBreak/>
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoEntidade"/>
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoEspecializacao"/>
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoAtributo"/>
+            <ColumnBreak/>
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoAutoRelacionar"/>
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoLigarObjetos"/>
+            <ColumnBreak/>
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoTexto"/>
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoExcluir"/>
+          </GroupSizeDefinition>
+        </SizeDefinition>
+        <SizeDefinition Name="FerramentasLogico">
+          <ControlNameMap>
+            <ControlNameDefinition Name="BotaoCancelarLogico"/>
+            <ControlNameDefinition Name="BotaoTabela"/>
+            <ControlNameDefinition Name="BotaoRelacionamento"/>
+            <ControlNameDefinition Name="BotaoCampo"/>
+            <ControlNameDefinition Name="BotaoChavePrimaria"/>
+            <ControlNameDefinition Name="BotaoChaveEstrangeira"/>
+            <ControlNameDefinition Name="BotaoSeparador"/>
+          </ControlNameMap>
+          <GroupSizeDefinition Size="Large">
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoCancelarLogico"/>
+            <ColumnBreak/>
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoTabela"/>
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoRelacionamento"/>
+            <ColumnBreak/>
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoCampo"/>
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoChavePrimaria"/>
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoChaveEstrangeira"/>
+            <ColumnBreak/>
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoSeparador"/>
+          </GroupSizeDefinition>
+        </SizeDefinition>
+        <SizeDefinition Name="Clipboard">
+          <ControlNameMap>
+            <ControlNameDefinition Name="BotaoColar"/>
+            <ControlNameDefinition Name="BotaoCopiar"/>
+            <ControlNameDefinition Name="BotaoRecortar"/>
+          </ControlNameMap>
+          <GroupSizeDefinition Size="Large">
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoColar"/>
+            <ControlSizeDefinition ControlName="BotaoCopiar"/>
+            <ControlSizeDefinition ControlName="BotaoRecortar"/>
+          </GroupSizeDefinition>
+        </SizeDefinition>
+        <SizeDefinition Name="Exportacao">
+          <ControlNameMap>
+            <ControlNameDefinition Name="BotaoJpeg"/>
+            <ControlNameDefinition Name="BotaoBmp"/>
+          </ControlNameMap>
+          <GroupSizeDefinition Size="Large">
+            <ControlSizeDefinition ControlName="BotaoJpeg"/>
+            <ControlSizeDefinition ControlName="BotaoBmp"/>
+          </GroupSizeDefinition>
+        </SizeDefinition>
+        <SizeDefinition Name="Documentacao">
+          <ControlNameMap>
+            <ControlNameDefinition Name="BotaoVisualizar"/>
+            <ControlNameDefinition Name="BotaoExibirLog"/>
+            <ControlNameDefinition Name="BotaoLimparLog"/>
+            <ControlNameDefinition Name="BotaoSalvarLog"/>
+          </ControlNameMap>
+          <GroupSizeDefinition Size="Large">
+            <ControlSizeDefinition ImageSize="Large" ControlName="BotaoVisualizar"/>
+            <ControlSizeDefinition ControlName="BotaoExibirLog"/>
+            <ControlSizeDefinition ControlName="BotaoLimparLog"/>
+            <ControlSizeDefinition ControlName="BotaoSalvarLog"/>
+          </GroupSizeDefinition>
+        </SizeDefinition>
+      </Ribbon.SizeDefinitions>
+      <Ribbon.ApplicationMenu>
+        <ApplicationMenu CommandName="cmdDocRecentes">
+          <ApplicationMenu.RecentItems>
+            <RecentItems CommandName="cmdHeaderDocumentosRecentes" MaxCount="5" EnablePinning="false"/>
+          </ApplicationMenu.RecentItems>
+          <MenuGroup>
+            <DropDownButton CommandName="cmdHeaderNovoModelo" ApplicationModes="0,1">
+              <MenuGroup CommandName="cmdNovoModeloSubMenu" Class="MajorItems">
+                <Button CommandName="cmdNovoConceitual"/>
+                <Button CommandName="cmdNovoLogico"/>
+              </MenuGroup>
+            </DropDownButton>
+            <Button CommandName="cmdAbrir" ApplicationModes="0,1"/>
+            <Button CommandName="cmdSalvar" ApplicationModes="0,1"/>
+            <Button CommandName="cmdSalvarComo" ApplicationModes="0,1"/>
+            <Button CommandName="cmdFechar" ApplicationModes="0,1"/>
+          </MenuGroup>
+          <MenuGroup>
+            <SplitButton CommandName="cmdImprimirMais" ApplicationModes="0,1">
+              <SplitButton.ButtonItem>
+                <Button CommandName="cmdImprimir"/>
+              </SplitButton.ButtonItem>
+              <SplitButton.MenuGroups>
+                <MenuGroup CommandName="cmdImpressaoSubMenu" Class="MajorItems">
+                  <Button CommandName="cmdImprimir"/>
+                  <Button CommandName="cmdGerarDicionario"/>
+                  <Button CommandName="cmdExportarJPEG"/>
+                  <Button CommandName="cmdExportarBMP"/>
+                </MenuGroup>
+              </SplitButton.MenuGroups>
+            </SplitButton>
+          </MenuGroup>
+          <MenuGroup>
+            <Button CommandName="cmdConfiguracoes" ApplicationModes="0,1"/>
+          </MenuGroup>
+          <MenuGroup>
+            <Button CommandName="cmdSair" ApplicationModes="0,1"/>
+          </MenuGroup>
+        </ApplicationMenu>
+      </Ribbon.ApplicationMenu>
+      <Ribbon.HelpButton>
+        <HelpButton CommandName="cmdSobre"/>
+      </Ribbon.HelpButton>
+      <Ribbon.QuickAccessToolbar>
+        <QuickAccessToolbar>
+          <QuickAccessToolbar.ApplicationDefaults>
+            <Button CommandName="cmdDesfazer" ApplicationDefaults.IsChecked="true"/>
+            <Button CommandName="cmdRefazer" ApplicationDefaults.IsChecked="true"/>
+            <CheckBox CommandName="cmdAutoSalvar" ApplicationDefaults.IsChecked="true"/>
+          </QuickAccessToolbar.ApplicationDefaults>
+        </QuickAccessToolbar>
+      </Ribbon.QuickAccessToolbar>
+      <Ribbon.Tabs>
+        <Tab CommandName="cmdTabConceitual" ApplicationModes="0">
+          <Group CommandName="cmdGroupFerramentasConceitual" ApplicationModes="0" SizeDefinition="FerramentasConceitual">
+            <ToggleButton CommandName="cmdCancelarConceitual"/>
+            <DropDownButton CommandName="cmdAtributoMais">
+              <ToggleButton CommandName="cmdCriarAtributo"/>
+              <ToggleButton CommandName="cmdCriarAtributoIdentificador"/>
+              <ToggleButton CommandName="cmdCriarAtributoMultivalorado"/>
+              <ToggleButton CommandName="cmdCriarAtributoComposto"/>
+              <ToggleButton CommandName="cmdCriarAtributoOpcional"/>
+            </DropDownButton>
+            <DropDownButton CommandName="cmdEspecializacaoMais">
+              <ToggleButton CommandName="cmdCriarEspecializacao"/>
+              <ToggleButton CommandName="cmdCriarEspecializacaoExcEntidade"/>
+              <ToggleButton CommandName="cmdCriarEspecializacaoNaoExcEntidade"/>
+            </DropDownButton>
+            <DropDownButton CommandName="cmdEntidadeMais">
+              <ToggleButton CommandName="cmdCriarEntidade"/>
+              <ToggleButton CommandName="cmdCriarRelacao"/>
+              <ToggleButton CommandName="cmdCriarEntidadeAssociativa"/>
+            </DropDownButton>
+            <ToggleButton CommandName="cmdAutoRelacionar"/>
+            <ToggleButton CommandName="cmdLigarObjetos"/>
+            <ToggleButton CommandName="cmdCriarObservacao"/>
+            <Button CommandName="cmdExcluirSelecionadoConceitual"/>
+          </Group>
+          <Group CommandName="cmdGroupOperacoesConceitual" ApplicationModes="0" SizeDefinition="TwoButtons">
+            <DropDownButton CommandName="cmdOperacoesConceitualMais">
+              <Button CommandName="cmdOcultarAtributo"/>
+              <Button CommandName="cmdOrganizarAtributos"/>
+              <Button CommandName="cmdSelecionarAtributo"/>
+              <Button CommandName="cmdPromoverEntidadeAssociativa"/>
+              <Button CommandName="cmdPromoverEntidade"/>
+              <Button CommandName="cmdConverterEspParaRestrita"/>
+              <Button CommandName="cmdConverterEspParaOpcional"/>
+              <Button CommandName="cmdDicionarioDadosObjConceitual"/>
+            </DropDownButton>
+            <Button CommandName="cmdGerarEsquemaLogico"/>
+          </Group>
+        </Tab>
+        <Tab CommandName="cmdTabLogico" ApplicationModes="1">
+          <Group CommandName="cmdGroupFerramentasConceitual" ApplicationModes="1" SizeDefinition="FerramentasLogico">
+            <ToggleButton CommandName="cmdCancelarLogico"/>
+            <ToggleButton CommandName="cmdCriarTabela"/>
+            <ToggleButton CommandName="cmdCriarRelacionamento"/>
+            <ToggleButton CommandName="cmdCriarCampo"/>
+            <ToggleButton CommandName="cmdCriarChavePrimaria"/>
+            <ToggleButton CommandName="cmdCriarChaveEstrangeira"/>
+            <ToggleButton CommandName="cmdCriarSeparadosCampos"/>
+          </Group>
+          <Group CommandName="cmdGroupOperacoesLogico" ApplicationModes="1" SizeDefinition="TwoButtons">
+            <DropDownButton CommandName="cmdOperacoesLogicoMais">
+              <Button CommandName="cmdDicionarioDadosObjLogico"/>
+              <Button CommandName="cmdIncluirAlterarXLS"/>
+              <Button CommandName="cmdEditarTemplateConversao"/>
+            </DropDownButton>
+            <Button CommandName="cmdGerarEsquemaFisico"/>
+          </Group>
+        </Tab>
+        <Tab CommandName="cmdTabOpcoes" ApplicationModes="0,1">
+          <Group CommandName="cmdGroupDocumentacao" ApplicationModes="0,1" SizeDefinition="Documentacao">
+            <Button CommandName="cmdVisualizarXML"/>
+            <ToggleButton CommandName="cmdExibirLog"/>
+            <Button CommandName="cmdLimparLog"/>
+            <Button CommandName="cmdSalvarLog"/>
+          </Group>
+          <Group CommandName="cmdGroupClipboard" ApplicationModes="0,1" SizeDefinition="Clipboard">
+            <Button CommandName="cmdColar"/>
+            <Button CommandName="cmdRecortar"/>
+            <Button CommandName="cmdCopiar"/>
+          </Group>
+          <Group CommandName="cmdGroupFonte" ApplicationModes="0,1" SizeDefinition="OneButton">
+            <Button CommandName="cmdSelecionarFonte"/>
+          </Group>
+        </Tab>
+      </Ribbon.Tabs>
+    </Ribbon>
+    <ContextPopup/>
+  </Application.Views>
+</Application>

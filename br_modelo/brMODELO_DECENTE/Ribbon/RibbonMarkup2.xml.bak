@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application xmlns="http://schemas.microsoft.com/windows/2009/Ribbon">
+  <Application.Commands>
+    <Command Name="cmdTabArquivo" LabelTitle="Arquivo"/>
+    <Command Name="cmdGroupOpcoes" LabelTitle="Opções"/>
+    <Command Name="cmdSalvarComo" LabelTitle="Salvar Como ...">
+      <Command.SmallImages>
+        <Image>Res/Salvar2S.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/Salvar2L.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdFechar" LabelTitle="Fechar">
+      <Command.SmallImages>
+        <Image>Res/Fechar2S.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image>Res/Fechar2L.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+  </Application.Commands>
+  <Application.Views>
+    <Ribbon Name="brModeloModeloFisico" GroupSpacing="Large">
+      <Ribbon.ApplicationMenu>
+        <ApplicationMenu/>
+      </Ribbon.ApplicationMenu>
+      <Ribbon.QuickAccessToolbar>
+        <QuickAccessToolbar/>
+      </Ribbon.QuickAccessToolbar>
+      <Ribbon.Tabs>
+        <Tab CommandName="cmdTabArquivo">
+          <Group CommandName="cmdGroupOpcoes" SizeDefinition="TwoButtons">
+            <Button CommandName="cmdSalvarComo"/>
+            <Button CommandName="cmdFechar"/>
+          </Group>
+        </Tab>
+      </Ribbon.Tabs>
+    </Ribbon>
+    <ContextPopup/>
+  </Application.Views>
+</Application>
