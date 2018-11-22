@@ -120,12 +120,25 @@ INSERT INTO orgaos_imprensa(nome_orgao) VALUES ('Rotten Tomatos');
 INSERT INTO orgaos_imprensa(nome_orgao) VALUES ('Metacritic');
 
 ########################################################
+#Insercao de metodos de avaliacao de orgaos de imprensa
+#Tipos de avaliacao ENUM('ESTRELAS', 'QUALITATIVO', 'NOTA', 'PORCENTAGEM')
+#Para achar o orgao, use: 
+#	(SELECT id_orgaos_imprensa FROM orgaos_imprensa 
+#	WHERE nome_orgao = 'nome_do_orgao')
+# Veja o exemplo de filmes/elenco/diretores
+#INSERT INTO formas_de_avaliacao(id_orgaos_imprensa,tipo_de_avaliacao) VALUES();
+
+########################################################
 #Insercao de avaliadores
-#INSERT INTO avaliadores() VALUES ('');
+#INSERT INTO avaliadores(nome) VALUES ();
 
 
 ########################################################
 #Insercao de avaliadores e orgaos de imprensa
+#SELECTS para fazer busca dos mesmos
+# (SELECT id_avaliadores FROM avaliadores WHERE nome = '')
+# (SELECT id_orgaos_imprensa FROM orgaos_imprensa WHERE nome_orgao = '')
+#INSERT INTO avaliadores_has_orgaos_imprensa(id_avaliadores,id_orgaos_imprensa) VALUES ();
 
 ########################################################
 #Insercao de filmes     -- Para insercao de horas de filme, use minutos vezes 60
@@ -158,14 +171,12 @@ INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pa
 (SELECT id_pais FROM pais WHERE nome_pais = 'BR')
 );
 
-
 #https://pt.wikipedia.org/wiki/Requiem_for_a_Dream
 INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pais_fk) VALUES ('Réquiem para um Sonho',SEC_TO_TIME(102*60),'2000-05-14',
 (SELECT id_genero_filme FROM genero_filme WHERE nome = 'Drama'),
 (SELECT id_idioma FROM idioma WHERE nome_idioma = 'Inglês'),
 (SELECT id_pais FROM pais WHERE nome_pais = 'FR')
 );
-
 
 #https://pt.wikipedia.org/wiki/Koe_no_Katachi_(filme)
 INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pais_fk) VALUES ('Koe no Katachi',SEC_TO_TIME(130*60),'2016-09-17',
@@ -174,14 +185,12 @@ INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pa
 (SELECT id_pais FROM pais WHERE nome_pais = 'JP')
 );
 
-
 #https://pt.wikipedia.org/wiki/%C3%80_Espera_de_um_Milagre
 INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pais_fk) VALUES ('À Espera de um Milagre',SEC_TO_TIME(189*60),'1999-12-10',
 (SELECT id_genero_filme FROM genero_filme WHERE nome = 'Drama'),
 (SELECT id_idioma FROM idioma WHERE nome_idioma = 'Inglês'),
 (SELECT id_pais FROM pais WHERE nome_pais = 'USA')
 );
-
 
 #https://pt.wikipedia.org/wiki/Kill_Bill
 INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pais_fk) VALUES ('Kill Bill: Volume 1',SEC_TO_TIME(111*60),'1999-12-10',
@@ -190,14 +199,12 @@ INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pa
 (SELECT id_pais FROM pais WHERE nome_pais = 'USA')
 );
 
-
 #https://pt.wikipedia.org/wiki/Kill_Bill
 INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pais_fk) VALUES ('Kill Bill: Volume 2',SEC_TO_TIME(136*60),'1999-12-10',
 (SELECT id_genero_filme FROM genero_filme WHERE nome = 'Ação'),
 (SELECT id_idioma FROM idioma WHERE nome_idioma = 'Inglês'),
 (SELECT id_pais FROM pais WHERE nome_pais = 'USA')
 );
-
 
 #https://pt.wikipedia.org/wiki/Kung_Fu_Hustle
 INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pais_fk) VALUES ('Kung-Fusão',SEC_TO_TIME(95*60),'1999-12-10',
@@ -258,6 +265,7 @@ INSERT INTO filme_has_diretor(filme_id_filme,diretor_id_diretor) VALUES (
 (SELECT id_filme FROM filme WHERE titulo = 'Kung-Fusão'),
 (SELECT id_diretor FROM diretor WHERE nome = 'Stephen Chow')
 );
+
 ########################################################
 #Insercao de relacao entre atores e filmes
 
@@ -351,19 +359,6 @@ INSERT INTO elenco(filme_id_filme,atores_id_atores,papel) VALUES (
 'John Coffey');
 
 
-#À espera de um milagre
-
-INSERT INTO elenco(filme_id_filme,atores_id_atores,papel) VALUES (
-(SELECT id_filme FROM filme WHERE titulo = 'À Espera de um Milagre'),
-(SELECT id_atores FROM atores WHERE nome = 'Tom Hanks'),
-'Paul Edgecomb');
-
-INSERT INTO elenco(filme_id_filme,atores_id_atores,papel) VALUES (
-(SELECT id_filme FROM filme WHERE titulo = 'À Espera de um Milagre'),
-(SELECT id_atores FROM atores WHERE nome = 'Michael Clarke Duncan'),
-'John Coffey');
-
-
 #Kill Bill: Volume 1
 
 INSERT INTO elenco(filme_id_filme,atores_id_atores,papel) VALUES (
@@ -397,7 +392,24 @@ INSERT INTO elenco(filme_id_filme,atores_id_atores,papel) VALUES (
 (SELECT id_atores FROM atores WHERE nome = 'Stephen Chow'),
 'Sing');
 
+#########################################################
+#Insercao de resultados (notas) dos filmes
+#Padrao de normalizacao a parte:
+#-Estrelas: (1 a 5) x 2
+#-Nota: (0 a 10)
+#-Qualitativo: (Excelente - 5 & Bom - 4 & Medio - 3 & Ruim - 2 & Pessimo - 1) X 2
+#-Porcentagem: (Porcentagem) / 10   (porcentagem dividido por 10)
+#-Normalizado: (0 a 10) fazendo a operacao correspondente ao tipo de nota
+#INSERT INTO resultados(resultado_original,resultado_normalizado) VALUES();
 
 #########################################################
 #Insercao de avaliacoes
+#Associacao dos resultados com os avaliadores e orgaos de imprensa
+#
+#INSERT INTO avaliacoes(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,resultados_idresultados) VALUES();
 
+#########################################################
+#Insercao de filmes e avaliacoes
+# (SELECT id_filme FROM filme WHERE titulo = '')
+# (SELECT id_avaliacao FROM avaliacao WHERE ????   Fazer um JOIN? (não sei :x)
+#INSERT INTO filme_has_avaliacao(filme_id_filme,avaliacao_id_avaliacao) VALUES ();
