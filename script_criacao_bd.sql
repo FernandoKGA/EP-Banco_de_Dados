@@ -235,13 +235,14 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `ep_banco_de_dados`.`filme_has_atores`
+-- Table `ep_banco_de_dados`.`elenco`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `ep_banco_de_dados`.`filme_has_atores` ;
+DROP TABLE IF EXISTS `ep_banco_de_dados`.`elenco` ;
 
-CREATE TABLE IF NOT EXISTS `ep_banco_de_dados`.`filme_has_atores` (
+CREATE TABLE IF NOT EXISTS `ep_banco_de_dados`.`elenco` (
   `filme_id_filme` INT UNSIGNED NOT NULL,
   `atores_id_atores` INT UNSIGNED NOT NULL,
+  `papel` VARCHAR(60) NOT NULL,
   PRIMARY KEY (`filme_id_filme`, `atores_id_atores`),
   INDEX `fk_filme_has_atores_atores1_idx` (`atores_id_atores` ASC),
   INDEX `fk_filme_has_atores_filme1_idx` (`filme_id_filme` ASC),

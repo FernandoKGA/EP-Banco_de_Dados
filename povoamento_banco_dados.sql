@@ -111,8 +111,6 @@ INSERT INTO atores(nome,ano_nascimento,genero) VALUES ('David Carradine','1936',
 
 #https://pt.wikipedia.org/wiki/Stephen_Chow
 INSERT INTO atores(nome,ano_nascimento,genero) VALUES ('Stephen Chow','1962','MASC');
-#
-#INSERT INTO atores(nome,ano_nascimento,genero) VALUES ('','','');
 
 ########################################################
 #Insercao de orgaos de imprensa
