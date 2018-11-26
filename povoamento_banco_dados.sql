@@ -116,7 +116,7 @@ INSERT INTO atores(nome,ano_nascimento,genero) VALUES ('Stephen Chow','1962','MA
 #Insercao de orgaos de imprensa
 
 INSERT INTO orgaos_imprensa(nome_orgao) VALUES ('IMDB');
-INSERT INTO orgaos_imprensa(nome_orgao) VALUES ('Rotten Tomatos');
+INSERT INTO orgaos_imprensa(nome_orgao) VALUES ('Rotten Tomatoes');
 INSERT INTO orgaos_imprensa(nome_orgao) VALUES ('Metacritic');
 
 ########################################################
@@ -126,19 +126,33 @@ INSERT INTO orgaos_imprensa(nome_orgao) VALUES ('Metacritic');
 #	(SELECT id_orgaos_imprensa FROM orgaos_imprensa 
 #	WHERE nome_orgao = 'nome_do_orgao')
 # Veja o exemplo de filmes/elenco/diretores
-#INSERT INTO formas_de_avaliacao(id_orgaos_imprensa,tipo_de_avaliacao) VALUES();
+INSERT INTO formas_de_avaliacao(id_orgaos_imprensa,tipo_de_avaliacao) VALUES('1','Estrelas');
+INSERT INTO formas_de_avaliacao(id_orgaos_imprensa,tipo_de_avaliacao) VALUES('2','Porcentagem');
+INSERT INTO formas_de_avaliacao(id_orgaos_imprensa,tipo_de_avaliacao) VALUES('3','Nota');
 
 ########################################################
 #Insercao de avaliadores
-#INSERT INTO avaliadores(nome) VALUES ();
-
-
+INSERT INTO avaliadores(nome) VALUES ('Todd McCarthy');
+INSERT INTO avaliadores(nome) VALUES ('Jonathan Rosenbaum');
+INSERT INTO avaliadores(nome) VALUES ('Peter Rainer');
+INSERT INTO avaliadores(nome) VALUES ('Andrew Sarris');
+INSERT INTO avaliadores(nome) VALUES ('Rick Groen');
+INSERT INTO avaliadores(nome) VALUES ('Geoffrey O'Brien');
+                                      
 ########################################################
 #Insercao de avaliadores e orgaos de imprensa
 #SELECTS para fazer busca dos mesmos
-# (SELECT id_avaliadores FROM avaliadores WHERE nome = '')
-# (SELECT id_orgaos_imprensa FROM orgaos_imprensa WHERE nome_orgao = '')
-#INSERT INTO avaliadores_has_orgaos_imprensa(id_avaliadores,id_orgaos_imprensa) VALUES ();
+INSERT INTO avaliadores_has_orgaos_imprensa(id_avaliadores,id_orgaos_imprensa) VALUES ('1','1');
+INSERT INTO avaliadores_has_orgaos_imprensa(id_avaliadores,id_orgaos_imprensa) VALUES ('2','1');
+INSERT INTO avaliadores_has_orgaos_imprensa(id_avaliadores,id_orgaos_imprensa) VALUES ('1','3');
+INSERT INTO avaliadores_has_orgaos_imprensa(id_avaliadores,id_orgaos_imprensa) VALUES ('3','2');   
+(SELECT id_avaliadores FROM avaliadores WHERE nome = 'Todd McCarthy');
+(SELECT id_orgaos_imprensa FROM orgaos_imprensa WHERE nome_orgao = 'IMDB');
+(SELECT id_avaliadores FROM avaliadores WHERE nome = 'Peter Rainer');
+(SELECT id_orgaos_imprensa FROM orgaos_imprensa WHERE nome_orgao = 'Rotten Tomatoes');
+(SELECT id_avaliadores FROM avaliadores WHERE nome = 'Rick Groen');
+(SELECT id_orgaos_imprensa FROM orgaos_imprensa WHERE nome_orgao = 'Metacritic');                                      
+                                      
 
 ########################################################
 #Insercao de filmes     -- Para insercao de horas de filme, use minutos vezes 60
@@ -400,16 +414,25 @@ INSERT INTO elenco(filme_id_filme,atores_id_atores,papel) VALUES (
 #-Qualitativo: (Excelente - 5 & Bom - 4 & Medio - 3 & Ruim - 2 & Pessimo - 1) X 2
 #-Porcentagem: (Porcentagem) / 10   (porcentagem dividido por 10)
 #-Normalizado: (0 a 10) fazendo a operacao correspondente ao tipo de nota
-#INSERT INTO resultados(resultado_original,resultado_normalizado) VALUES();
-
+#INSERT INTO resultados(resultado_original,resultado_normalizado) VALUES('2 Estrelas','4');
+INSERT INTO resultados(resultado_original,resultado_normalizado) VALUES('70%','7');
+INSERT INTO resultados(resultado_original,resultado_normalizado) VALUES('5 Estrelas','10');
+INSERT INTO resultados(resultado_original,resultado_normalizado) VALUES('8','8');
+INSERT INTO resultados(resultado_original,resultado_normalizado) VALUES('87%','8.7');
+INSERT INTO resultados(resultado_original,resultado_normalizado) VALUES('Bom','8');
+ 
 #########################################################
 #Insercao de avaliacoes
 #Associacao dos resultados com os avaliadores e orgaos de imprensa
 #
-#INSERT INTO avaliacoes(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,resultados_idresultados) VALUES();
-
+INSERT INTO avaliacoes(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,resultados_idresultados) VALUES('04/05/2003','1','2','7');
+INSERT INTO avaliacoes(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,resultados_idresultados) VALUES('20/12/2010','2','2','9.3');
+INSERT INTO avaliacoes(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,resultados_idresultados) VALUES('01/05/2016','3','1','5.6');
+INSERT INTO avaliacoes(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,resultados_idresultados) VALUES('17/10/2005','2','1','8.4');
+INSERT INTO avaliacoes(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,resultados_idresultados) VALUES('10/01/2018','3','3','3.5');                                      
+                                      
 #########################################################
 #Insercao de filmes e avaliacoes
 # (SELECT id_filme FROM filme WHERE titulo = '')
-# (SELECT id_avaliacao FROM avaliacao WHERE ????   Fazer um JOIN? (não sei :x)
+# (SELECT id_avaliacao FROM avaliacao WHERE ????   Fazer um JOIN? (não sei :x) Fazer Left Join, porém terá de ser adicionado alguma informação de filme na tabela avaliacao
 #INSERT INTO filme_has_avaliacao(filme_id_filme,avaliacao_id_avaliacao) VALUES ();
