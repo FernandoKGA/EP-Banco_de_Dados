@@ -171,19 +171,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `ep_banco_de_dados`.`resultados`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `ep_banco_de_dados`.`resultados` ;
-
-CREATE TABLE IF NOT EXISTS `ep_banco_de_dados`.`resultados` (
-  `idresultados` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `resultado_original` VARCHAR(20) NOT NULL,
-  `resultado_normalizado` DECIMAL(2,2) UNSIGNED NOT NULL,
-  PRIMARY KEY (`idresultados`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `ep_banco_de_dados`.`avaliacao`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `ep_banco_de_dados`.`avaliacao` ;
@@ -193,18 +180,20 @@ CREATE TABLE IF NOT EXISTS `ep_banco_de_dados`.`avaliacao` (
   `data_avaliacao` DATE NOT NULL,
   `id_avaliadores_orgaos_imprensa` INT UNSIGNED NOT NULL,
   `id_orgaos_imprensa_avaliadores` INT UNSIGNED NOT NULL,
-  `resultados_idresultados` INT UNSIGNED NOT NULL,
-  PRIMARY KEY (`id_avaliacao`, `id_avaliadores_orgaos_imprensa`, `id_orgaos_imprensa_avaliadores`, `resultados_idresultados`),
+  `filme_id_filme` INT UNSIGNED NOT NULL,
+  `resultado_original` VARCHAR(20) NOT NULL,
+  `resultado_normalizado` DECIMAL(4,2) UNSIGNED NOT NULL,
+  PRIMARY KEY (`id_avaliacao`, `id_avaliadores_orgaos_imprensa`, `id_orgaos_imprensa_avaliadores`),
   INDEX `fk_avaliacao_avaliadores_has_orgaos_imprensa1_idx` (`id_avaliadores_orgaos_imprensa` ASC, `id_orgaos_imprensa_avaliadores` ASC),
-  INDEX `fk_avaliacao_resultados1_idx` (`resultados_idresultados` ASC),
+  INDEX `fk_avaliacao_filme1_idx` (`filme_id_filme` ASC),
   CONSTRAINT `fk_avaliacao_avaliadores_has_orgaos_imprensa1`
     FOREIGN KEY (`id_avaliadores_orgaos_imprensa` , `id_orgaos_imprensa_avaliadores`)
     REFERENCES `ep_banco_de_dados`.`avaliadores_has_orgaos_imprensa` (`id_avaliadores` , `id_orgaos_imprensa`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_avaliacao_resultados1`
-    FOREIGN KEY (`resultados_idresultados`)
-    REFERENCES `ep_banco_de_dados`.`resultados` (`idresultados`)
+  CONSTRAINT `fk_avaliacao_filme1`
+    FOREIGN KEY (`filme_id_filme`)
+    REFERENCES `ep_banco_de_dados`.`filme` (`id_filme`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -260,36 +249,12 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `ep_banco_de_dados`.`filme_has_avaliacao`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `ep_banco_de_dados`.`filme_has_avaliacao` ;
-
-CREATE TABLE IF NOT EXISTS `ep_banco_de_dados`.`filme_has_avaliacao` (
-  `filme_id_filme` INT UNSIGNED NOT NULL,
-  `avaliacao_id_avaliacao` INT UNSIGNED NOT NULL,
-  PRIMARY KEY (`filme_id_filme`, `avaliacao_id_avaliacao`),
-  INDEX `fk_filme_has_avaliacao_avaliacao1_idx` (`avaliacao_id_avaliacao` ASC),
-  INDEX `fk_filme_has_avaliacao_filme1_idx` (`filme_id_filme` ASC),
-  CONSTRAINT `fk_filme_has_avaliacao_filme1`
-    FOREIGN KEY (`filme_id_filme`)
-    REFERENCES `ep_banco_de_dados`.`filme` (`id_filme`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_filme_has_avaliacao_avaliacao1`
-    FOREIGN KEY (`avaliacao_id_avaliacao`)
-    REFERENCES `ep_banco_de_dados`.`avaliacao` (`id_avaliacao`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `ep_banco_de_dados`.`formas_de_avaliacao`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `ep_banco_de_dados`.`formas_de_avaliacao` ;
 
 CREATE TABLE IF NOT EXISTS `ep_banco_de_dados`.`formas_de_avaliacao` (
-  `idformas_de_avaliacao` INT UNSIGNED NOT NULL,
+  `idformas_de_avaliacao` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `id_orgaos_imprensa` INT UNSIGNED NOT NULL,
   `tipo_de_avaliacao` ENUM('ESTRELAS', 'QUALITATIVO', 'NOTA', 'PORCENTAGEM') NOT NULL,
   PRIMARY KEY (`idformas_de_avaliacao`, `id_orgaos_imprensa`),
