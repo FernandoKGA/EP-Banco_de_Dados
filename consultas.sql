@@ -1,85 +1,31 @@
-SELECT filmes, papeis, idade
-FROM ATORES
-WHERE Ator eq 'Robert DeNiro' AND anoInicial > 1970
-UNION 
-SELECT avaliacao 
-FROM FILME
-ORDER BY avaliacao ASC
-
-SELECT filmes, papeis, idade
-FROM ATORES
-WHERE Ator eq 'Al Pacino' AND anoFinal < 2005
-UNION 
-SELECT avaliacao 
-FROM FILME
-ORDER BY avaliacao DESC
-
-SELECT filmes, codiretores, idade
-FROM DIRETORES
-WHERE Diretor eq 'Stanley Kubrick' AND anoFinal < 1990
-UNION 
-SELECT avaliacao 
-FROM FILME
-ORDER BY avaliacao ASC
-
-SELECT filmes, codiretores, idade
-FROM DIRETORES
-WHERE Diretor eq 'Wim Wenders' AND anoInicial < 1980
-UNION 
-SELECT avaliacao 
-FROM FILME
-ORDER BY avaliacao DESC
-
-SELECT filmes, codiretores, idade
-FROM DIRETORES
-WHERE Diretor eq 'Cristopher Nolan' AND genero eq 'Guerra'
-
-SELECT elenco, genero, avaliacao, mediaaval, duracao, idioma, pais 
-FROM FILME
-WHERE NomeFilme eq 'O Iluminado'
-
-SELECT elenco, genero, avaliacao, mediaaval, duracao, idioma, pais 
-FROM FILME
-WHERE NomeFilme eq 'Dunkirk'
-
-SELECT Diretor
-FROM DIRETORES LIMIT 10
-UNION
-SELECT NomeFilme, ano, avaliacao
-FROM FILME 
-WHERE genero eq 'Drama' AND anoInicial > 2000 LIMIT 10
-
-SELECT Diretor
-FROM DIRETORES LIMIT 10
-UNION
-SELECT NomeFilme, ano, avaliacao
-FROM FILME 
-WHERE genero eq 'Terror' AND anoFinal > 1995 LIMIT 10
-
-SELECT Diretor
-FROM DIRETORES LIMIT 5
-UNION
-SELECT Ator, AtuouEm, avaliacao
-FROM FILME 
-WHERE genero eq 'Suspense' AND anoFinal < 2010 LIMIT 5
-
-SELECT Diretor
-FROM DIRETORES LIMIT 5
-UNION
-SELECT Ator, AtuouEm, avaliacao
-FROM FILME 
-WHERE genero eq 'Comedia' AND anoInicial > 1990 LIMIT 5
-
-
-
-
-
-
-
-
-
-
-
-
-
+SELECT filme.titulo AS 'Título',
+	   elenco.papel AS 'Papel',
+       atores.ano_nascimento AS 'Nascimento'
+	FROM atores
+	JOIN elenco ON elenco.atores_id_atores= atores.id_atores
+	JOIN filme ON filme.id_filme = elenco.filme_id_filme
+	JOIN avaliacao ON filme.id_filme = avaliacao.filme_id_filme
+	JOIN genero_filme ON filme.genero_filme_fk = genero_filme.id_genero_filme
+	WHERE atores.nome = 'Uma Thurman' 
+	  AND filme.titulo ='Kill Bill: Volume 2'
+	  AND genero_filme.nome = 'Ação'
+	  HAVING MAX(avaliacao.resultado_normalizado)
+	  OR MIN(avaliacao.resultado_normalizado);
+  
+SELECT filme.titulo AS 'Título',
+	   diretor.nome AS 'Diretor',
+       diretor.ano_nascimento 'NASCIMENTO'
+	FROM diretor
+	JOIN filme_has_diretor ON filme_has_diretor.diretor_id_diretor = diretor.id_diretor
+	JOIN filme ON filme.id_filme = filme_has_diretor.filme_id_filme
+	JOIN genero_filme ON genero_filme.id_genero_filme = filme.genero_filme_fk
+    JOIN avaliacao ON avaliacao.filme_id_filme = filme.id_filme
+	WHERE diretor.nome = 'Quentin Tarantino'
+      AND filme.data_de_lancamento >='1999-10-10' AND filme.data_de_lancamento <= '1999-12-13'
+	  AND genero_filme.nome = 'Ação'
+	  HAVING MAX(avaliacao.resultado_normalizado)
+	  OR MIN(avaliacao.resultado_normalizado);
+  
+SELECT * FROM filme;
+SELECT * FROM genero_filme;
 
