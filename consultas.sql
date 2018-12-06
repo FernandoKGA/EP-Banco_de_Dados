@@ -37,16 +37,48 @@ SELECT  atores.nome AS 'Elenco',
         filme.duracao AS 'Duração',
         idioma.nome_idioma AS 'Idioma',
         pais.nome_pais AS 'País'
-   FROM filme
-   JOIN elenco on elenco.filme_id_filme = filme.id_filme
-   JOIN atores on atores.id_atores = elenco.atores_id_atores
-   JOIN genero_filme on genero_filme.id_genero_filme = filme.genero_filme_fk
-   JOIN avaliacao on avaliacao.filme_id_filme = filme.id_filme
-   JOIN avaliadores_has_orgaos_imprensa on avaliadores_has_orgaos_imprensa.id_orgaos_imprensa = avaliacao.id_orgaos_imprensa_avaliadores
-   JOIN orgaos_imprensa on orgaos_imprensa.id_orgaos_imprensa = avaliadores_has_orgaos_imprensa.id_orgaos_imprensa
-   JOIN avaliadores on avaliadores.id_avaliadores = avaliadores_has_orgaos_imprensa.id_avaliadores
-   JOIN idioma on idioma.id_idioma = filme.idioma_fk 	
-   JOIN pais on pais.id_pais = filme.pais_fk
-   WHERE filme.titulo = 'Kill Bill: Volume 2';
+    FROM filme
+    JOIN elenco on elenco.filme_id_filme = filme.id_filme
+    JOIN atores on atores.id_atores = elenco.atores_id_atores
+    JOIN genero_filme on genero_filme.id_genero_filme = filme.genero_filme_fk
+    JOIN avaliacao on avaliacao.filme_id_filme = filme.id_filme
+    JOIN avaliadores_has_orgaos_imprensa on avaliadores_has_orgaos_imprensa.id_orgaos_imprensa = avaliacao.id_orgaos_imprensa_avaliadores
+    JOIN orgaos_imprensa on orgaos_imprensa.id_orgaos_imprensa = avaliadores_has_orgaos_imprensa.id_orgaos_imprensa
+    JOIN avaliadores on avaliadores.id_avaliadores = avaliadores_has_orgaos_imprensa.id_avaliadores
+    JOIN idioma on idioma.id_idioma = filme.idioma_fk 	
+    JOIN pais on pais.id_pais = filme.pais_fk
+    WHERE filme.titulo = 'Kill Bill: Volume 2';
    
+SELECT filme.titulo AS 'TITULO',
+       diretor.nome AS 'Diretores',
+       filme.data_de_lancamento AS 'Data de lançamento',
+       avaliacao.resultado_normalizado AS 'Avaliação normalizada'
+    FROM filme
+    JOIN filme_has_diretor on filme_has_diretor.filme_id_filme = filme.id_filme
+    JOIN diretor on diretor.id_diretor = filme_has_diretor.diretor_id_diretor
+    JOIN genero_filme on genero_filme.id_genero_filme = filme.genero_filme_fk
+    JOIN avaliacao on avaliacao.filme_id_filme = filme.id_filme
+    WHERE genero_filme.nome = 'Ação'
+    AND filme.data_de_lancamento >='1999-10-10' AND filme.data_de_lancamento <= '1999-12-13'
+	HAVING MAX(avaliacao.resultado_normalizado)
+	OR MIN(avaliacao.resultado_normalizado);
 
+SELECT atores.nome AS 'Ator',
+	   filme.titulo AS 'Título',
+       diretor.nome AS 'Diretor',
+       filme.data_de_lancamento AS 'Data'
+       FROM atores
+       JOIN elenco on elenco.atores_id_atores = atores.id_atores
+       JOIN filme on filme.id_filme = elenco.filme_id_filme
+       JOIN filme_has_diretor on filme_has_diretor.filme_id_filme = filme.id_filme
+       JOIN diretor on diretor.id_diretor = filme_has_diretor.filme_id_filme
+       JOIN genero_filme on genero_filme.id_genero_filme = filme.genero_filme_fk
+       JOIN avaliacao on avaliacao.filme_id_filme = filme.id_filme
+       WHERE genero_filme.nome = 'Ação'
+	   AND filme.data_de_lancamento >='1999-10-10' AND filme.data_de_lancamento <= '1999-12-13'
+	   HAVING MAX(avaliacao.resultado_normalizado)
+	   OR MIN(avaliacao.resultado_normalizado);
+
+	   
+       
+       
