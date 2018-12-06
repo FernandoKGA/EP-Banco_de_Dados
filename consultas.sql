@@ -26,6 +26,27 @@ SELECT filme.titulo AS 'Título',
 	  HAVING MAX(avaliacao.resultado_normalizado)
 	  OR MIN(avaliacao.resultado_normalizado);
   
-SELECT * FROM filme;
-SELECT * FROM genero_filme;
+SELECT  atores.nome AS 'Elenco',
+        elenco.papel AS 'Papel',
+        genero_filme.nome AS 'Gênero',
+        orgaos_imprensa.nome_orgao AS 'Órgão de imprensa',
+        avaliacao.data_avaliacao AS 'Data da avaliação',
+        avaliacao.resultado_original AS 'Avaliação original',
+        avaliacao.resultado_normalizado AS 'Resultado normalizado',
+        avaliadores.nome AS 'Avaliador',
+        filme.duracao AS 'Duração',
+        idioma.nome_idioma AS 'Idioma',
+        pais.nome_pais AS 'País'
+   FROM filme
+   JOIN elenco on elenco.filme_id_filme = filme.id_filme
+   JOIN atores on atores.id_atores = elenco.atores_id_atores
+   JOIN genero_filme on genero_filme.id_genero_filme = filme.genero_filme_fk
+   JOIN avaliacao on avaliacao.filme_id_filme = filme.id_filme
+   JOIN avaliadores_has_orgaos_imprensa on avaliadores_has_orgaos_imprensa.id_orgaos_imprensa = avaliacao.id_orgaos_imprensa_avaliadores
+   JOIN orgaos_imprensa on orgaos_imprensa.id_orgaos_imprensa = avaliadores_has_orgaos_imprensa.id_orgaos_imprensa
+   JOIN avaliadores on avaliadores.id_avaliadores = avaliadores_has_orgaos_imprensa.id_avaliadores
+   JOIN idioma on idioma.id_idioma = filme.idioma_fk 	
+   JOIN pais on pais.id_pais = filme.pais_fk
+   WHERE filme.titulo = 'Kill Bill: Volume 2';
+   
 
