@@ -221,21 +221,21 @@ INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pa
 );
 
 #https://pt.wikipedia.org/wiki/Kill_Bill
-INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pais_fk) VALUES ('Kill Bill: Volume 1',SEC_TO_TIME(111*60),'1999-12-10',
+INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pais_fk) VALUES ('Kill Bill: Volume 1',SEC_TO_TIME(111*60),'2003-10-24',
 (SELECT id_genero_filme FROM genero_filme WHERE nome = 'Ação'),
 (SELECT id_idioma FROM idioma WHERE nome_idioma = 'Inglês'),
 (SELECT id_pais FROM pais WHERE nome_pais = 'USA')
 );
 
 #https://pt.wikipedia.org/wiki/Kill_Bill
-INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pais_fk) VALUES ('Kill Bill: Volume 2',SEC_TO_TIME(136*60),'1999-12-10',
+INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pais_fk) VALUES ('Kill Bill: Volume 2',SEC_TO_TIME(136*60),'2004-04-16',
 (SELECT id_genero_filme FROM genero_filme WHERE nome = 'Ação'),
 (SELECT id_idioma FROM idioma WHERE nome_idioma = 'Inglês'),
 (SELECT id_pais FROM pais WHERE nome_pais = 'USA')
 );
 
 #https://pt.wikipedia.org/wiki/Kung_Fu_Hustle
-INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pais_fk) VALUES ('Kung-Fusão',SEC_TO_TIME(95*60),'1999-12-10',
+INSERT INTO filme(titulo,duracao,data_de_lancamento,genero_filme_fk,idioma_fk,pais_fk) VALUES ('Kung-Fusão',SEC_TO_TIME(95*60),'2004-09-14',
 (SELECT id_genero_filme FROM genero_filme WHERE nome = 'Comédia'),
 (SELECT id_idioma FROM idioma WHERE nome_idioma = 'Mandarim'),
 (SELECT id_pais FROM pais WHERE nome_pais = 'CH')
@@ -255,6 +255,16 @@ INSERT INTO filme_has_diretor(filme_id_filme,diretor_id_diretor) VALUES (
 );
 
 INSERT INTO filme_has_diretor(filme_id_filme,diretor_id_diretor) VALUES (
+(SELECT id_filme FROM filme WHERE titulo = 'Bastardos Inglórios'),
+(SELECT id_diretor FROM diretor WHERE nome = 'Francis Ford Coppola')
+);
+
+INSERT INTO filme_has_diretor(filme_id_filme,diretor_id_diretor) VALUES (
+(SELECT id_filme FROM filme WHERE titulo = 'Bastardos Inglórios'),
+(SELECT id_diretor FROM diretor WHERE nome = 'Steven Spielberg')
+);
+
+INSERT INTO filme_has_diretor(filme_id_filme,diretor_id_diretor) VALUES (
 (SELECT id_filme FROM filme WHERE titulo = 'Snowden'),
 (SELECT id_diretor FROM diretor WHERE nome = 'Oliver Stone')
 );
@@ -262,6 +272,11 @@ INSERT INTO filme_has_diretor(filme_id_filme,diretor_id_diretor) VALUES (
 INSERT INTO filme_has_diretor(filme_id_filme,diretor_id_diretor) VALUES (
 (SELECT id_filme FROM filme WHERE titulo = 'Tropa de Elite'),
 (SELECT id_diretor FROM diretor WHERE nome = 'José Padilha')
+);
+
+INSERT INTO filme_has_diretor(filme_id_filme,diretor_id_diretor) VALUES (
+(SELECT id_filme FROM filme WHERE titulo = 'Tropa de Elite'),
+(SELECT id_diretor FROM diretor WHERE nome = 'Quentin Tarantino')
 );
 
 INSERT INTO filme_has_diretor(filme_id_filme,diretor_id_diretor) VALUES (
@@ -436,8 +451,23 @@ INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_im
 ('2003-05-04','1','1',(SELECT id_filme FROM filme WHERE titulo = 'Réquiem para um Sonho'),'2 Estrelas',4.00),
 ('2010-12-20','2','1',(SELECT id_filme FROM filme WHERE titulo = 'Lincoln'),'5 Estrelas',10.00),
 ('2016-10-17','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Koe no Katachi'),'70%',7.00);
-INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2018-01-10','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 2'),'62%',6.20);
-INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2019-01-10','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 2'),'62%',6.20);
+
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES 
+('2018-01-10','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 2'),'62%',6.20);
+
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES 
+('2019-01-10','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 2'),'62%',6.20);
+
+
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES 
+('2019-01-12','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 1'),'70%',7.00);
+
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES 
+('2019-01-13','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Bastardos Inglórios'),'80%',8.00);
+
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES 
+('2019-03-11','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Tropa de Elite'),'80%',7.50);
+
 #('2018-01-10','1','3',(SELECT id_filme FROM filme WHERE titulo = ''),'8',8.00),
 #('2018-01-10','1','3',(SELECT id_filme FROM filme WHERE titulo = ''),'8',8.00),
 #('2018-01-10','1','3',(SELECT id_filme FROM filme WHERE titulo = ''),'8',8.00),
