@@ -1,3 +1,12 @@
+/*
+  TRABALHO DE BANCO DE DADOS - ACH2004
+  ALUNOS:
+  - FERNANDO KARCHILOFF GOUVEIA DE AMORIM (10387644)
+  - JOÃO GUILHERME DA COSTA SEIKI (9784634)
+  - VICTOR GOMES DE OLIVEIRA MARTINS NICOLA (9844881)
+  - GUILHERME AUGUSTO RIBEIRO NEVES (9037522) 
+*/
+
 -- MySQL dump 10.13  Distrib 5.7.22, for Win64 (x86_64)
 --
 -- Host: localhost    Database: ep_banco_de_dados
@@ -69,7 +78,7 @@ CREATE TABLE `avaliacao` (
   KEY `fk_avaliacao_filme1_idx` (`filme_id_filme`),
   CONSTRAINT `fk_avaliacao_avaliadores_has_orgaos_imprensa1` FOREIGN KEY (`id_avaliadores_orgaos_imprensa`, `id_orgaos_imprensa_avaliadores`) REFERENCES `avaliadores_has_orgaos_imprensa` (`id_avaliadores`, `id_orgaos_imprensa`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_avaliacao_filme1` FOREIGN KEY (`filme_id_filme`) REFERENCES `filme` (`id_filme`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -78,7 +87,7 @@ CREATE TABLE `avaliacao` (
 
 LOCK TABLES `avaliacao` WRITE;
 /*!40000 ALTER TABLE `avaliacao` DISABLE KEYS */;
-INSERT INTO `avaliacao` VALUES (1,'2003-05-04',1,1,5,'2 Estrelas',4.00),(2,'2010-12-20',2,1,2,'5 Estrelas',10.00),(3,'2016-10-17',3,2,6,'70%',7.00),(4,'2018-01-10',3,2,9,'62%',6.20),(5,'2019-01-10',3,2,9,'62%',6.20),(6,'2019-01-12',3,2,8,'70%',7.00),(7,'2019-01-13',3,2,1,'80%',8.00),(8,'2019-03-11',3,2,4,'80%',7.50);
+INSERT INTO `avaliacao` VALUES (1,'2016-04-01',1,1,1,'4 Estrelas',8.00),(2,'2017-06-02',1,1,2,'5 Estrelas',10.00),(3,'2018-08-03',1,1,3,'4 Estrelas',8.00),(4,'2016-10-04',1,1,4,'4 Estrelas',8.00),(5,'2017-12-05',1,1,5,'5 Estrelas',10.00),(6,'2018-02-06',1,1,6,'4 Estrelas',8.00),(7,'2016-01-07',1,1,7,'4 Estrelas',8.00),(8,'2017-03-08',1,1,8,'4 Estrelas',8.00),(9,'2018-05-09',1,1,9,'4 Estrelas',8.00),(10,'2016-07-10',1,1,10,'3 Estrelas',6.00),(11,'2017-09-11',2,1,1,'4 Estrelas',8.00),(12,'2018-11-12',2,1,2,'90%',9.00),(13,'2016-04-13',2,1,3,'85%',8.50),(14,'2017-06-14',2,1,4,'75%',7.50),(15,'2018-08-15',2,1,5,'90%',9.00),(16,'2016-10-16',2,1,6,'75%',7.50),(17,'2017-12-17',2,1,7,'85%',8.50),(18,'2018-02-18',2,1,8,'80%',8.00),(19,'2019-01-19',2,1,9,'77%',7.70),(20,'2019-03-20',2,1,10,'45%',4.50),(21,'2017-09-07',1,1,1,'5 Estrelas',10.00),(22,'2018-11-08',1,1,2,'4 Estrelas',8.00),(23,'2016-04-09',1,1,3,'4 Estrelas',8.00),(24,'2017-06-10',1,1,4,'4 Estrelas',8.00),(25,'2018-08-11',1,1,5,'4 Estrelas',8.00),(26,'2016-10-12',1,1,6,'4 Estrelas',8.00),(27,'2017-12-13',1,1,7,'5 Estrelas',10.00),(28,'2018-02-14',1,1,8,'4 Estrelas',8.00),(29,'2019-01-15',1,1,9,'4 Estrelas',8.00),(30,'2019-03-16',1,1,10,'2 Estrelas',4.00);
 /*!40000 ALTER TABLE `avaliacao` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -389,4 +398,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-07  0:58:26
+-- Dump completed on 2018-12-07 14:14:04
