@@ -1,13 +1,3 @@
-/*
-  TRABALHO DE BANCO DE DADOS - ACH2004
-  ALUNOS:
-  - FERNANDO KARCHILOFF GOUVEIA DE AMORIM (10387644)
-  - JOÃO GUILHERME DA COSTA SEIKI (9784634)
-  - VICTOR GOMES DE OLIVEIRA MARTINS NICOLA (9844881)
-  - GUILHERME AUGUSTO RIBEIRO NEVES (9037522) 
-*/
-
-
 -- MySQL dump 10.13  Distrib 5.7.22, for Win64 (x86_64)
 --
 -- Host: localhost    Database: ep_banco_de_dados
@@ -79,7 +69,7 @@ CREATE TABLE `avaliacao` (
   KEY `fk_avaliacao_filme1_idx` (`filme_id_filme`),
   CONSTRAINT `fk_avaliacao_avaliadores_has_orgaos_imprensa1` FOREIGN KEY (`id_avaliadores_orgaos_imprensa`, `id_orgaos_imprensa_avaliadores`) REFERENCES `avaliadores_has_orgaos_imprensa` (`id_avaliadores`, `id_orgaos_imprensa`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_avaliacao_filme1` FOREIGN KEY (`filme_id_filme`) REFERENCES `filme` (`id_filme`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -88,7 +78,7 @@ CREATE TABLE `avaliacao` (
 
 LOCK TABLES `avaliacao` WRITE;
 /*!40000 ALTER TABLE `avaliacao` DISABLE KEYS */;
-INSERT INTO `avaliacao` VALUES (1,'2003-05-04',1,1,5,'2 Estrelas',4.00),(2,'2010-12-20',2,1,2,'5 Estrelas',10.00),(3,'2016-10-17',3,2,6,'70%',7.00),(4,'2018-01-10',3,2,9,'62%',6.20),(5,'2019-01-10',3,2,9,'62%',6.20),(6,'2019-01-10',3,2,9,'62%',6.20);
+INSERT INTO `avaliacao` VALUES (1,'2003-05-04',1,1,5,'2 Estrelas',4.00),(2,'2010-12-20',2,1,2,'5 Estrelas',10.00),(3,'2016-10-17',3,2,6,'70%',7.00),(4,'2018-01-10',3,2,9,'62%',6.20),(5,'2019-01-10',3,2,9,'62%',6.20),(6,'2019-01-12',3,2,8,'70%',7.00),(7,'2019-01-13',3,2,1,'80%',8.00),(8,'2019-03-11',3,2,4,'80%',7.50);
 /*!40000 ALTER TABLE `avaliacao` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -231,7 +221,7 @@ CREATE TABLE `filme` (
 
 LOCK TABLES `filme` WRITE;
 /*!40000 ALTER TABLE `filme` DISABLE KEYS */;
-INSERT INTO `filme` VALUES (1,'Bastardos Inglórios','02:33:00','2009-05-20',5,2,1),(2,'Lincoln','02:30:00','2012-10-08',1,2,1),(3,'Snowden','02:14:00','2016-09-09',1,2,1),(4,'Tropa de Elite','01:58:00','2007-10-12',8,1,2),(5,'Réquiem para um Sonho','01:42:00','2000-05-14',1,2,11),(6,'Koe no Katachi','02:10:00','2016-09-17',11,8,6),(7,'À Espera de um Milagre','03:09:00','1999-12-10',1,2,1),(8,'Kill Bill: Volume 1','01:51:00','1999-12-10',5,2,1),(9,'Kill Bill: Volume 2','02:16:00','1999-12-10',5,2,1),(10,'Kung-Fusão','01:35:00','1999-12-10',2,6,4);
+INSERT INTO `filme` VALUES (1,'Bastardos Inglórios','02:33:00','2009-05-20',5,2,1),(2,'Lincoln','02:30:00','2012-10-08',1,2,1),(3,'Snowden','02:14:00','2016-09-09',1,2,1),(4,'Tropa de Elite','01:58:00','2007-10-12',8,1,2),(5,'Réquiem para um Sonho','01:42:00','2000-05-14',1,2,11),(6,'Koe no Katachi','02:10:00','2016-09-17',11,8,6),(7,'À Espera de um Milagre','03:09:00','1999-12-10',1,2,1),(8,'Kill Bill: Volume 1','01:51:00','2003-10-24',5,2,1),(9,'Kill Bill: Volume 2','02:16:00','2004-04-16',5,2,1),(10,'Kung-Fusão','01:35:00','2004-09-14',2,6,4);
 /*!40000 ALTER TABLE `filme` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -259,7 +249,7 @@ CREATE TABLE `filme_has_diretor` (
 
 LOCK TABLES `filme_has_diretor` WRITE;
 /*!40000 ALTER TABLE `filme_has_diretor` DISABLE KEYS */;
-INSERT INTO `filme_has_diretor` VALUES (2,1),(1,2),(8,2),(9,2),(3,8),(4,9),(5,10),(6,11),(7,12),(10,13);
+INSERT INTO `filme_has_diretor` VALUES (1,1),(2,1),(1,2),(4,2),(8,2),(9,2),(1,3),(3,8),(4,9),(5,10),(6,11),(7,12),(10,13);
 /*!40000 ALTER TABLE `filme_has_diretor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -399,4 +389,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-06 18:52:16
+-- Dump completed on 2018-12-07  0:58:26
