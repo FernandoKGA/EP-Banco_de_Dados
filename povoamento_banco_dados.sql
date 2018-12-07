@@ -446,27 +446,37 @@ INSERT INTO elenco(filme_id_filme,atores_id_atores,papel) VALUES (
 #########################################################
 #Insercao de avaliacoes
 #Associacao dos resultados com os avaliadores e orgaos de imprensa
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2016-04-01', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Bastardos Inglórios'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2017-06-02', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Lincoln'), '5 Estrelas', 10.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2018-08-03', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Snowden'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2016-10-04', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Tropa de Elite'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2017-12-05', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Réquiem para um Sonho'), '5 Estrelas', 10.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2018-02-06', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Koe no Katachi'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2016-01-07', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'À Espera de um Milagre'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2017-03-08', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 1'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2018-05-09', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 2'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2016-07-10', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Kung-Fusão'), '3 Estrelas', 6.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2017-09-11', '2', '1', (SELECT id_filme FROM filme WHERE titulo = 'Bastardos Inglórios'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2018-11-12', '2', '1', (SELECT id_filme FROM filme WHERE titulo = 'Lincoln'), '90%', 9.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2016-04-13', '2', '1', (SELECT id_filme FROM filme WHERE titulo = 'Snowden'), '85%', 8.50);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2017-06-14', '2', '1', (SELECT id_filme FROM filme WHERE titulo = 'Tropa de Elite'), '75%', 7.50);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2018-08-15', '2', '1', (SELECT id_filme FROM filme WHERE titulo = 'Réquiem para um Sonho'), '90%', 9.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2016-10-16', '2', '1', (SELECT id_filme FROM filme WHERE titulo = 'Koe no Katachi'), '75%', 7.50);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2017-12-17', '2', '1', (SELECT id_filme FROM filme WHERE titulo = 'À Espera de um Milagre'), '85%', 8.50);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2018-02-18', '2', '1', (SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 1'), '80%', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2019-01-19', '2', '1', (SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 2'), '77%', 7.70);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2019-03-20', '2', '1', (SELECT id_filme FROM filme WHERE titulo = 'Kung-Fusão'), '45%', 4.50);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2017-09-07', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Bastardos Inglórios'), '5 Estrelas', 10.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2018-11-08', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Lincoln'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2016-04-09', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Snowden'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2017-06-10', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Tropa de Elite'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2018-08-11', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Réquiem para um Sonho'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2016-10-12', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Koe no Katachi'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2017-12-13', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'À Espera de um Milagre'), '5 Estrelas', 10.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2018-02-14', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 1'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2019-01-15', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 2'), '4 Estrelas', 8.00);
+INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES ('2019-03-16', '1', '1', (SELECT id_filme FROM filme WHERE titulo = 'Kung-Fusão'), '2 Estrelas', 4.00);
 
-INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES
-('2003-05-04','1','1',(SELECT id_filme FROM filme WHERE titulo = 'Réquiem para um Sonho'),'2 Estrelas',4.00),
-('2010-12-20','2','1',(SELECT id_filme FROM filme WHERE titulo = 'Lincoln'),'5 Estrelas',10.00),
-('2016-10-17','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Koe no Katachi'),'70%',7.00);
-
-INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES 
-('2018-01-10','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 2'),'62%',6.20);
-
-INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES 
-('2019-01-10','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 2'),'62%',6.20);
-
-
-INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES 
-('2019-01-12','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Kill Bill: Volume 1'),'70%',7.00);
-
-INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES 
-('2019-01-13','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Bastardos Inglórios'),'80%',8.00);
-
-INSERT INTO avaliacao(data_avaliacao,id_avaliadores_orgaos_imprensa,id_orgaos_imprensa_avaliadores,filme_id_filme,resultado_original,resultado_normalizado) VALUES 
-('2019-03-11','3','2',(SELECT id_filme FROM filme WHERE titulo = 'Tropa de Elite'),'80%',7.50);
 
 #('2018-01-10','1','3',(SELECT id_filme FROM filme WHERE titulo = ''),'8',8.00),
 #('2018-01-10','1','3',(SELECT id_filme FROM filme WHERE titulo = ''),'8',8.00),
